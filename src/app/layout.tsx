@@ -28,6 +28,16 @@ export const metadata: Metadata = {
   title: "Hardik Jariwala | Full-Stack .NET & Angular Software Engineer",
   description:
     "Full-stack .NET & Angular engineer with hands-on experience building enterprise ERP systems — ASP.NET Core APIs, SQL Server business logic, and complex workflow features.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   keywords: [
     "Hardik Jariwala",
     ".NET developer",

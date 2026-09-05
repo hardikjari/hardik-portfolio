@@ -83,9 +83,7 @@ export function Footer() {
         <div suppressHydrationWarning>
           © {new Date().getFullYear()} {PORTFOLIO_INFO.name}. All rights reserved.
         </div>
-        <div>
-          Engineered with Next.js, TypeScript, Tailwind CSS & anime.js
-        </div>
+
       </div>
     </footer>
   );
