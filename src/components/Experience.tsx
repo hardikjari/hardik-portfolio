@@ -91,9 +91,9 @@ export function Experience() {
           subtitle="Real-world enterprise development track record delivering full-stack solutions and resolving complex production challenges."
         />
 
-        <div className="relative pl-6 sm:pl-10">
+        <div className="relative pl-8 sm:pl-12">
           {/* Vertical SVG timeline line */}
-          <div className="absolute left-[11px] sm:left-[19px] top-6 bottom-6 w-[2px]">
+          <div className="absolute left-4 sm:left-6 -translate-x-1/2 top-[26px] sm:top-[36px] bottom-6 w-[2px]">
             <svg className="w-full h-full" preserveAspectRatio="none">
               <line
                 x1="1"
@@ -116,8 +116,8 @@ export function Experience() {
 
           {EXPERIENCE_LIST.map((exp, idx) => (
             <div key={idx} className="relative mb-12 last:mb-0">
-              {/* Pulsing Node */}
-              <div className="anime-exp-node absolute -left-[29px] sm:-left-[37px] top-2.5 w-6 h-6 rounded-full bg-[var(--bg-surface)] border-2 border-[var(--accent-cyan)] flex items-center justify-center shadow-md shadow-cyan-500/20 z-10">
+              {/* Pulsing Node - Centered precisely on the vertical line and aligned with company heading */}
+              <div className="anime-exp-node absolute -left-4 sm:-left-6 -translate-x-1/2 top-[26px] sm:top-[36px] w-6 h-6 rounded-full bg-[var(--bg-surface)] border-2 border-[var(--accent-cyan)] flex items-center justify-center shadow-md shadow-cyan-500/20 z-10">
                 <span className="w-2 h-2 rounded-full bg-[var(--accent-cyan)] animate-pulse" />
               </div>
 
