@@ -23,6 +23,7 @@ import {
   ShieldCheck,
   Zap
 } from "lucide-react";
+import { GithubIcon } from "./ui/Icons";
 
 export function Projects() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -107,6 +108,8 @@ export function Projects() {
         return <FolderLock className="w-5 h-5 text-purple-400" />;
       case "Desktop Application":
         return <Monitor className="w-5 h-5 text-blue-400" />;
+      case "REST API":
+        return <Server className="w-5 h-5 text-emerald-400" />;
       default:
         return <Layers className="w-5 h-5 text-[var(--accent-cyan)]" />;
     }
@@ -210,9 +213,24 @@ export function Projects() {
                     )}
                   </div>
 
-                  <div className="flex items-center justify-between text-xs font-mono font-medium text-[var(--accent-cyan)] pt-1">
-                    <span>View Architecture Details</span>
-                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                  <div className="flex items-center justify-between text-xs font-mono font-medium pt-1">
+                    <span className="text-[var(--accent-cyan)] flex items-center gap-1 group-hover:underline">
+                      <span>View Architecture Details</span>
+                      <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </span>
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-[var(--bg-surface-elevated)] hover:bg-[var(--accent-cyan)] text-[var(--text-main)] hover:text-slate-950 border border-[var(--border-subtle)] hover:border-[var(--accent-cyan)] transition-colors text-[11px]"
+                        title="View Source Code on GitHub"
+                      >
+                        <GithubIcon className="w-3.5 h-3.5" />
+                        <span>GitHub</span>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -229,7 +247,7 @@ export function Projects() {
             >
               <div className="flex items-start justify-between gap-4 pb-4 border-b border-[var(--border-subtle)]">
                 <div>
-                  <div className="flex items-center gap-2 mb-1">
+                  <div className="flex items-center gap-2 mb-1 flex-wrap">
                     <span className="text-xs font-mono text-[var(--accent-cyan)]">
                       {selectedProject.category}
                     </span>
@@ -237,6 +255,18 @@ export function Projects() {
                       <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500 text-slate-950 font-bold">
                         Primary Project
                       </span>
+                    )}
+                    {selectedProject.githubUrl && (
+                      <a
+                        href={selectedProject.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11px] font-mono bg-[var(--bg-surface-elevated)] hover:bg-[var(--accent-cyan)] text-[var(--text-main)] hover:text-slate-950 border border-[var(--border-subtle)] hover:border-[var(--accent-cyan)] transition-colors"
+                      >
+                        <GithubIcon className="w-3 h-3" />
+                        <span>GitHub Repo</span>
+                        <ArrowUpRight className="w-2.5 h-2.5" />
+                      </a>
                     )}
                   </div>
                   <h3 className="text-2xl font-bold text-[var(--text-main)]">
@@ -322,6 +352,22 @@ export function Projects() {
                   ))}
                 </div>
               </div>
+
+              {/* GitHub Link CTA in Modal */}
+              {selectedProject.githubUrl && (
+                <div className="pt-2">
+                  <a
+                    href={selectedProject.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-[var(--bg-surface-elevated)] hover:bg-[var(--accent-cyan)] text-[var(--text-main)] hover:text-slate-950 border border-[var(--border-subtle)] hover:border-[var(--accent-cyan)] font-mono text-xs font-semibold transition-all duration-200 shadow-sm group"
+                  >
+                    <GithubIcon className="w-4 h-4" />
+                    <span>View Repository on GitHub</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         )}

@@ -100,6 +100,45 @@ html {
   color-scheme: dark light;
 }
 
+/* Cyber Tech Hardware Cursor (100% Zero Lag on Mouse Wheel & Scroll) */
+@media (pointer: fine) {
+  html,
+  body {
+    cursor: url('/cursors/cyber-arrow.svg') 2 2, auto;
+  }
+
+  a,
+  a *,
+  button,
+  button *,
+  [role="button"],
+  [role="button"] *,
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  select,
+  summary,
+  .cursor-pointer,
+  .cursor-pointer *,
+  .anime-project-card,
+  .anime-project-card *,
+  .anime-case-study,
+  .anime-case-study *,
+  .anime-arch-node,
+  .anime-arch-node * {
+    cursor: url('/cursors/cyber-reticle.svg') 16 16, pointer !important;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"],
+  textarea {
+    cursor: url('/cursors/cyber-ibeam.svg') 12 14, text !important;
+  }
+}
+
 body {
   background-color: var(--bg-base);
   color: var(--text-main);

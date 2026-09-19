@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <filter id="reticle-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#c084fc" flood-opacity="0.6"/>
+    </filter>
+    <linearGradient id="reticle-grad" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d8b4fe"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#reticle-glow)">
+    <!-- 4 Precision Corner Tech Brackets with dark backing -->
+    <!-- Top-Left -->
+    <path d="M5 12 V6 H11" stroke="#090812" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M5 12 V6 H11" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Top-Right -->
+    <path d="M21 6 H27 V12" stroke="#090812" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21 6 H27 V12" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Bottom-Left -->
+    <path d="M5 20 V26 H11" stroke="#090812" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M5 20 V26 H11" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Bottom-Right -->
+    <path d="M21 26 H27 V20" stroke="#090812" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21 26 H27 V20" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Center Target Ring with dark core -->
+    <circle cx="16" cy="16" r="4.5" fill="#090812" stroke="url(#reticle-grad)" stroke-width="1.8"/>
+    <circle cx="16" cy="16" r="1.6" fill="#ffffff"/>
+  </g>
+</svg>

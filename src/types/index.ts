@@ -29,7 +29,7 @@ export interface ProjectItem {
   title: string;
   subtitle: string;
   isFlagship?: boolean;
-  category: "Enterprise ERP" | "ERP Module" | "Web Application" | "Mobile/Web App" | "Desktop Application" | "Web Portal & Microservices";
+  category: "Enterprise ERP" | "ERP Module" | "Web Application" | "Mobile/Web App" | "Desktop Application" | "Web Portal & Microservices" | "REST API";
   summary: string;
   description: string;
   technologies: string[];
@@ -37,6 +37,8 @@ export interface ProjectItem {
   keyTables?: string[];
   architecture?: string;
   highlights: string[];
+  githubUrl?: string;
+  liveUrl?: string;
 }
 
 export interface CaseStudyItem {
@@ -64,6 +66,7 @@ export interface ContactInfo {
   email: string;
   phone: string;
   linkedin: string;
+  devto?: string;
   github?: string;
   location: string;
   resumeUrl: string;
@@ -74,4 +77,21 @@ export interface EducationItem {
   year: string;
   details: string;
   status: string;
+}
+
+export interface CertificationItem {
+  id: string;
+  title: string;
+  issuer: string;
+  event: string;
+  date: string;
+  badgeText: string;
+  pdfUrl?: string;
+  certificateUrl?: string;
+  credentialUrl?: string;
+  projectUrl?: string;
+  projectName?: string;
+  description: string;
+  technologies?: string[];
+  imageUrl?: string;
 }

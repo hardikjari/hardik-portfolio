@@ -15,7 +15,7 @@ import {
   Sparkles,
   ChevronDown
 } from "lucide-react";
-import { LinkedinIcon } from "./ui/Icons";
+import { LinkedinIcon, DevToIcon } from "./ui/Icons";
 
 export function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -186,6 +186,21 @@ export function Hero() {
             <LinkedinIcon className="w-3.5 h-3.5" />
             <span>LinkedIn Profile</span>
           </a>
+          {CONTACT_INFO.devto && (
+            <>
+              <span className="text-[var(--border-strong)]">•</span>
+              <a
+                href={CONTACT_INFO.devto}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 hover:text-[var(--accent-cyan)] transition-colors"
+                title="Dev Community Profile"
+              >
+                <DevToIcon className="w-3.5 h-3.5" />
+                <span>Dev Community</span>
+              </a>
+            </>
+          )}
           {/* GitHub Redirection and logo commented out as requested */}
           {/* <span className="text-[var(--border-strong)]">•</span>
           <a

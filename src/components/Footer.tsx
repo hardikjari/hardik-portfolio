@@ -3,7 +3,7 @@
 import React from "react";
 import { PORTFOLIO_INFO, CONTACT_INFO } from "@/data/portfolioData";
 import { ArrowUp, Terminal, Mail } from "lucide-react";
-import { LinkedinIcon } from "./ui/Icons";
+import { LinkedinIcon, DevToIcon } from "./ui/Icons";
 
 export function Footer() {
   const scrollToTop = () => {
@@ -50,6 +50,17 @@ export function Footer() {
           >
             <LinkedinIcon className="w-4 h-4" />
           </a>
+          {CONTACT_INFO.devto && (
+            <a
+              href={CONTACT_INFO.devto}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dev Community"
+              className="p-2 rounded-lg bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-elevated)] text-[var(--text-muted)] hover:text-[var(--accent-cyan)] border border-[var(--border-subtle)] transition-colors"
+            >
+              <DevToIcon className="w-4 h-4" />
+            </a>
+          )}
           {/* GitHub link commented out as requested */}
           {/* <a
             href={CONTACT_INFO.github}

@@ -5,7 +5,8 @@ import {
   CaseStudyItem,
   ArchitectureLayer,
   ContactInfo,
-  EducationItem
+  EducationItem,
+  CertificationItem
 } from "@/types";
 
 export const PORTFOLIO_INFO = {
@@ -21,6 +22,7 @@ export const CONTACT_INFO: ContactInfo = {
   email: "hardikjariwala869@gmail.com",
   phone: "+91 7016185309",
   linkedin: "https://www.linkedin.com/in/hardik-jariwala-71b7a2275/",
+  devto: "https://dev.to/hardik_jariwala_748c4a032",
   // github: "https://github.com/...", // GitHub redirection and logo commented out
   location: "Surat, Gujarat, India",
   resumeUrl: "/Hardik-CV.pdf",
@@ -52,6 +54,8 @@ export const SKILLS: SkillItem[] = [
   { name: "JWT Authentication & Authorization", category: "backend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 88, highlight: true },
   { name: "Business Logic & Middleware", category: "backend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 90 },
   { name: "Exception Handling & Logging", category: "backend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 88 },
+  { name: "Python", category: "backend", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 82, highlight: true },
+  { name: "FastAPI", category: "backend", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 84, highlight: true },
   // { name: "Unit Testing", category: "backend", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 80 },
   // { name: "Microservices", category: "backend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 88, highlight: true },
 
@@ -74,6 +78,7 @@ export const SKILLS: SkillItem[] = [
   // { name: "Indexes & Query Optimization", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 88, highlight: true },
   // { name: "Transactions & Isolation", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 88 },
   { name: "Database Debugging", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 90 },
+  { name: "PostgreSQL", category: "database", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 82, highlight: true },
   // { name: "JSON Handling in T-SQL", category: "database", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 85 },
   { name: "Constraints & Foreign Keys", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 90 },
 
@@ -203,6 +208,40 @@ export const PROJECTS: ProjectItem[] = [
       "Engineered administrative web portal in Angular for real-time EV charging station monitoring, status updates, and operational controls.",
       "Architected and implemented .NET Web API microservices to handle station data, charging telemetry, and transactional commands.",
       "Designed clean modular services ensuring high availability and fault-tolerant communication between station endpoints and admin dashboards.",
+    ],
+  },
+  {
+    id: "book-library-python-api",
+    title: "Book Library RESTful API",
+    subtitle: "FastAPI • Python • PostgreSQL • JWT Auth & RBAC",
+    category: "REST API",
+    githubUrl: "https://github.com/hardikjari/book-library-python-api",
+    summary: "High-performance RESTful API for book library catalog management built with FastAPI, SQLAlchemy 2.0, and PostgreSQL. Features JWT authentication, role-based access control (Admin/User), ILIKE search, multi-criteria filtering, dynamic sorting, and structured pagination.",
+    description: "A production-grade RESTful backend API engineered in Python and FastAPI for comprehensive book library catalog management. Architected with clean modular separation of concerns across models, schemas, routers, and dependencies. Implements secure OAuth2 JWT bearer token authentication with bcrypt password hashing and strict Role-Based Access Control (RBAC) protecting admin-only operations (book creation, updates, and deletion). Delivers advanced catalog exploration with case-insensitive multi-field search (title, author), granular filtering (category, publication year), dynamic multi-column sorting (ASC/DESC), and paginated responses with complete page metadata backed by SQLAlchemy 2.0 and PostgreSQL.",
+    technologies: [
+      "FastAPI",
+      "Python 3.14",
+      "SQLAlchemy 2.0",
+      "PostgreSQL",
+      "Pydantic v2",
+      "JWT & OAuth2",
+      "Bcrypt / Passlib",
+      "Uvicorn",
+      "REST APIs",
+    ],
+    keyModules: [
+      "Role-Based Access Control (Admin vs User permissions)",
+      "JWT OAuth2 Bearer Authentication & Bcrypt Hashing",
+      "Catalog Search & Multi-Filter Engine (Title, Author, Year, Category)",
+      "Dynamic Multi-Column Sorting & Paginated Metadata",
+      "ISBN Uniqueness Validation & Integrity Enforcement",
+      "Global Centralized Exception & Validation Handlers",
+    ],
+    architecture: "FastAPI Router Layer → Dependency Injection (Auth / RBAC / DB Session) → Pydantic v2 Schema Validation → SQLAlchemy 2.0 ORM → PostgreSQL Database",
+    highlights: [
+      "Engineered secure JWT authentication and role-based access control (RBAC) via FastAPI dependency injection, gating administrative book mutations to verified admin roles.",
+      "Implemented high-performance catalog querying supporting case-insensitive ILIKE search, category & year filters, dynamic ASC/DESC sorting, and structured pagination metadata.",
+      "Enforced strict schema validation and error handling using Pydantic v2 with centralized exception handlers returning uniform JSON error responses.",
     ],
   },
   {
@@ -438,9 +477,27 @@ export const EDUCATION_ITEMS: EducationItem[] = [
   },
 ];
 
+export const CERTIFICATION_ITEMS: CertificationItem[] = [
+  {
+    id: "hackaura-hackathon-2025",
+    title: "Certificate of Completion — HackAura Hackathon",
+    issuer: "Girls Leading Tech",
+    event: "HackAura Hackathon",
+    date: "October 2025",
+    badgeText: "Hackathon Participant",
+    pdfUrl: "/certificates/HackAura-Certificate.pdf",
+    certificateUrl: "/certificates/HackAura-Certificate.pdf",
+    imageUrl: "/certificates/hackaura-certificate.jpg",
+    projectName: "CriminalDetector.py",
+    projectUrl: "https://github.com/hardikjari/CriminalDetector.py",
+    description: "Successfully participated in the HackAura Hackathon and engineered 'CriminalDetector.py' — an integrated AI surveillance platform combining an Angular frontend, an ASP.NET Core Web API backend, and a Python computer vision facial recognition model for real-time person-of-interest detection across live camera feeds.",
+    technologies: ["Python", "Computer Vision / AI", "ASP.NET Core API", "Angular", "Real-Time Surveillance"],
+  },
+];
+
 export const CERTIFICATIONS = {
-  status: "Certifications coming soon",
-  note: "[Certifications in progress / planned for .NET & Cloud certifications]",
+  status: "In Progress / Planned",
+  note: "Certifications in progress",
 };
 
 export const CAREER_GOALS = {

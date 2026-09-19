@@ -17,7 +17,7 @@ import {
   Loader2,
   AlertCircle
 } from "lucide-react";
-import { LinkedinIcon } from "./ui/Icons";
+import { LinkedinIcon, DevToIcon } from "./ui/Icons";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -109,7 +109,7 @@ export function Contact() {
       } else {
         throw new Error(result?.message || "Failed to submit message.");
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error("Direct form submission error:", err);
       setStatus("error");
       setErrorMessage(
@@ -140,7 +140,7 @@ export function Contact() {
                 Direct Communication Channels
               </h3>
               <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-                Connect via email, phone, or LinkedIn. Feel free to reach out directly or submit the inquiry form below.
+                Connect via email, phone, LinkedIn, or Dev Community. Feel free to reach out directly or submit the inquiry form below.
               </p>
 
               {/* Email */}
@@ -226,6 +226,21 @@ export function Contact() {
                 <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[var(--accent-cyan)] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
+              {CONTACT_INFO.devto && (
+                <a
+                  href={CONTACT_INFO.devto}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="anime-contact-item p-4 rounded-xl glass-card border border-[var(--border-subtle)] hover:border-[var(--accent-cyan)]/40 transition-colors flex items-center justify-between group"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <DevToIcon className="w-4 h-4 text-[var(--accent-cyan)]" />
+                    <span className="text-xs font-semibold text-[var(--text-main)]">Dev Community</span>
+                  </div>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[var(--accent-cyan)] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </a>
+              )}
+
               {/* GitHub Redirection and logo commented out as requested */}
               {/* <a
                 href={CONTACT_INFO.github}
@@ -250,7 +265,7 @@ export function Contact() {
                   Send a Direct Message
                 </h3>
                 <p className="text-xs text-[var(--text-muted)]">
-                  Fill out the fields below to send a message directly to Hardik's inbox.
+                  Fill out the fields below to send a message directly to Hardik&apos;s inbox.
                 </p>
               </div>
 
@@ -266,7 +281,7 @@ export function Contact() {
                   </p>
                   {isActivationNotice && (
                     <div className="p-3 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-mono text-left max-w-md mx-auto">
-                      💡 <strong>Note for Hardik:</strong> FormSubmit sent a one-time confirmation to <strong>{CONTACT_INFO.email}</strong>. Please check your inbox and click "Activate Form" once to complete setup.
+                      💡 <strong>Note for Hardik:</strong> FormSubmit sent a one-time confirmation to <strong>{CONTACT_INFO.email}</strong>. Please check your inbox and click &quot;Activate Form&quot; once to complete setup.
                     </div>
                   )}
                   <div className="pt-2">
