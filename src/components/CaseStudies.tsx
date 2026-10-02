@@ -5,18 +5,18 @@ import anime from "animejs";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Badge } from "./ui/Badge";
 import { CASE_STUDIES } from "@/data/portfolioData";
-import { 
-  ShieldAlert, 
-  CheckCircle2, 
-  ChevronDown, 
-  Code2, 
-  Cpu, 
-  Database, 
-  Flame, 
-  GitMerge, 
-  Layers, 
-  Wrench, 
-  ArrowRight, 
+import {
+  ShieldAlert,
+  CheckCircle2,
+  ChevronDown,
+  Code2,
+  Cpu,
+  Database,
+  Flame,
+  GitMerge,
+  Layers,
+  Wrench,
+  ArrowRight,
   Workflow,
   ArrowLeftRight
 } from "lucide-react";
@@ -61,7 +61,7 @@ export function CaseStudies() {
 
   const toggleAccordion = (id: string) => {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    
+
     if (expandedId === id) {
       // Collapsing
       const contentEl = contentRefs.current[id];
@@ -136,7 +136,7 @@ export function CaseStudies() {
         <SectionHeading
           badge="Technical Problem Solving"
           title="Engineering Case Studies"
-          subtitle="Deep-dive breakdown of concrete architectural challenges solved in enterprise production environments — Problem → Approach → Implementation → Result."
+          subtitle="Deep-dive breakdown of concrete architectural challenges solved in enterprise production environments Problem → Approach → Implementation → Result."
         />
 
         <div className="space-y-4">
@@ -178,9 +178,8 @@ export function CaseStudies() {
                       ))}
                     </div>
                     <div
-                      className={`p-2 rounded-lg bg-[var(--bg-surface-elevated)] text-[var(--text-muted)] transition-transform duration-300 ${
-                        isExpanded ? "rotate-180 text-[var(--accent-cyan)]" : ""
-                      }`}
+                      className={`p-2 rounded-lg bg-[var(--bg-surface-elevated)] text-[var(--text-muted)] transition-transform duration-300 ${isExpanded ? "rotate-180 text-[var(--accent-cyan)]" : ""
+                        }`}
                     >
                       <ChevronDown className="w-4 h-4" />
                     </div>
@@ -192,9 +191,8 @@ export function CaseStudies() {
                   ref={(el) => {
                     contentRefs.current[study.id] = el;
                   }}
-                  className={`overflow-hidden transition-all duration-300 ${
-                    isExpanded ? "block" : "hidden"
-                  }`}
+                  className={`overflow-hidden transition-all duration-300 ${isExpanded ? "block" : "hidden"
+                    }`}
                   style={{ opacity: isExpanded ? 1 : 0 }}
                 >
                   <div className="p-5 sm:p-6 pt-0 border-t border-[var(--border-subtle)] mt-2 space-y-5">

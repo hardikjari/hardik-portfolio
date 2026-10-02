@@ -106,7 +106,7 @@ This repository contains the source code for the personal engineering portfolio 
 
 ---
 
-### 3. ⚡ ProRanked — EV Station Admin Portal
+### 3. ⚡ ProRanked EV Station Admin Portal
 - **Category:** EV Charging Station Management & Microservices
 - **Stack:** Angular, TypeScript, ASP.NET Core, .NET Web API Microservices, C#, SQL Server, REST APIs
 - **Overview:** Centralized administrative portal for monitoring, operating, and managing Electric Vehicle (EV) charging stations across multiple geographic hubs.
@@ -141,7 +141,7 @@ This repository contains the source code for the personal engineering portfolio 
 ## 🔬 In-Depth Engineering Case Studies
 
 ### 🔹 Case Study 1: ERP Transaction Allocation & Customer Product Returns
-- **The Challenge:** In enterprise accounting, allocating receipts and credit notes across multiple invoices requires handling partial splits, remaining balance tracking, and ledger reconciliation. When a customer returns goods, the system must atomically reverse stock into specific warehouse bins, issue debtor credit notes, recalculate taxes/COGS, and reallocate previous transaction balances—without race conditions or rounding discrepancies.
+- **The Challenge:** In enterprise accounting, allocating receipts and credit notes across multiple invoices requires handling partial splits, remaining balance tracking, and ledger reconciliation. When a customer returns goods, the system must atomically reverse stock into specific warehouse bins, issue debtor credit notes, recalculate taxes/COGS, and reallocate previous transaction balances without race conditions or rounding discrepancies.
 - **The Solution:**
   - Designed an interactive AG Grid interface in Angular 17 with live balance verification.
   - Authored atomic SQL Server stored procedures (`AR_CreditDebitAllocationManagement`, `AR_DebitCreditAllocationManagement`, `AR_DebtorRefundManagement`) utilizing `OPENJSON` to parse array payloads in single database round-trips.

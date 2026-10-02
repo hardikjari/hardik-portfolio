@@ -13,7 +13,7 @@ export const PORTFOLIO_INFO = {
   name: "Hardik Jariwala",
   role: "Full-Stack .NET & Angular Software Engineer",
   headline: "Full-Stack .NET & Angular Software Engineer",
-  subtext: "Full-stack engineer with hands-on experience building scalable applications — ASP.NET Core APIs & microservices, Angular front ends, real-time Firebase systems, and SQL Server enterprise architectures.",
+  subtext: "Full-stack engineer with hands-on experience building scalable applications ASP.NET Core APIs & microservices, Angular front ends, real-time Firebase systems, and SQL Server enterprise architectures.",
   status: "Available for Full-Stack .NET & Angular Opportunities",
   yearsExperience: "2+ Years",
 };
@@ -30,7 +30,7 @@ export const CONTACT_INFO: ContactInfo = {
 
 export const ABOUT_ME = {
   summary: `Hardik Jariwala is a full-stack software engineer with roughly 2+ years of professional experience, currently working across the ASP.NET Core / Angular / SQL Server stack. He started as a .NET Intern at CodexLancers (Jan 2024) and progressed into an SDE-1 role, taking on end-to-end ownership of features from UI through API through business logic to the database.`,
-  coreStrengths: `Core strength is backend and database engineering — designing mission-critical stored-procedure logic, transaction allocation engines, and enterprise business rules — paired with building responsive Angular front ends, AG Grid workflows, and custom recursive tree architectures.`,
+  coreStrengths: `Core strength is backend and database engineering designing mission-critical stored-procedure logic, transaction allocation engines, and enterprise business rules paired with building responsive Angular front ends, AG Grid workflows, and custom recursive tree architectures.`,
   flagshipWork: `Primary project is DIZ, an on-demand ride-hailing platform built with Angular and Firebase for real-time ride dispatch and live tracking. Also engineered the Time Tracking Tool featuring employee shift management, real-time shift tracking, and web-to-mobile push notifications via Firebase, and ProRanked an EV (Electric Vehicle) charging station administration web portal built with Angular and an ASP.NET Core microservices API backend. In addition, brings deep enterprise ERP experience across LinkERP modules: complex financial transaction allocation (Debit/Credit), customer product return workflows across SQL Server stored procedures and Angular, and access-controlled Document Management with custom recursive tree structures.`,
   // educationAndGrowth: `He holds an MCA (completed 2024) and is currently deepening his interest in backend/cloud systems and AI/ML.`,
   highlights: [
@@ -143,11 +143,11 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: "diz-ride-hailing",
     title: "DIZ Ride Hailing Platform",
-    subtitle: "Primary Project — On-Demand Ride Dispatch & Fleet Telemetry",
+    subtitle: "Primary Project On-Demand Ride Dispatch & Fleet Telemetry",
     isFlagship: true,
     category: "Mobile/Web App",
     summary: "On-demand ride-hailing and dispatch application providing real-time pick-up and drop-off services, reactive ride booking, driver coordination, and Firebase authentication.",
-    description: "Hardik's primary flagship project — an on-demand ride-hailing and fleet coordination platform engineered to provide dynamic pick-up and drop-off transport services. Features reactive client booking interfaces built in Angular, live trip status tracking, driver assignment updates, and secure user session management powered by Firebase.",
+    description: "Hardik's primary flagship project an on-demand ride-hailing and fleet coordination platform engineered to provide dynamic pick-up and drop-off transport services. Features reactive client booking interfaces built in Angular, live trip status tracking, driver assignment updates, and secure user session management powered by Firebase.",
     technologies: [
       "Angular",
       "TypeScript",
@@ -189,7 +189,7 @@ export const PROJECTS: ProjectItem[] = [
   },
   {
     id: "proranked-ev-portal",
-    title: "ProRanked — EV Station Admin Portal",
+    title: "ProRanked EV Station Admin Portal",
     subtitle: "EV Charging Station Management & Microservices Architecture",
     category: "Web Portal & Microservices",
     summary: "Centralized web administration panel for managing Electric Vehicle (EV) charging stations, charger telemetry, and operations using Angular and .NET microservices.",
@@ -342,7 +342,7 @@ export const CASE_STUDIES: CaseStudyItem[] = [
   {
     id: "case-study-transaction-allocation-returns",
     title: "ERP Transaction Allocation & Customer Product Returns",
-    problem: "Financial transaction allocation and customer product returns represent one of the most complex domains in enterprise ERP. Allocating receipts and credit notes across multiple debit invoices requires handling partial splits, remaining balance tracking, multi-currency conversions, and live ledger reconciliation. Furthermore, when a customer returns a product, the system must simultaneously reverse inventory stock into warehouse bins, generate debtor credit notes/refunds, recalculate taxes and COGS, and reallocate previous transaction balances—all without race conditions, rounding mismatches, or negative balances.",
+    problem: "Financial transaction allocation and customer product returns represent one of the most complex domains in enterprise ERP. Allocating receipts and credit notes across multiple debit invoices requires handling partial splits, remaining balance tracking, multi-currency conversions, and live ledger reconciliation. Furthermore, when a customer returns a product, the system must simultaneously reverse inventory stock into warehouse bins, generate debtor credit notes/refunds, recalculate taxes and COGS, and reallocate previous transaction balances all without race conditions, rounding mismatches, or negative balances.",
     approach: "Architected a dual-tier synchronization strategy: an interactive, real-time allocation grid in Angular with live balance validation, coupled with atomic SQL Server stored procedures utilizing `OPENJSON` batch processing, row-level locking hints, and transactional balance recalculation on the database side.",
     technologies: ["ASP.NET Core", "C#", "SQL Server", "T-SQL Transactions", "OPENJSON", "Angular 17", "AG Grid", "Reactive Forms"],
     implementation: "On the SP side, structured high-performance procedures (`AR_CreditDebitAllocationManagement`, `AR_DebitCreditAllocationManagement`, `AR_DebtorRefundManagement`) ingesting JSON arrays via `OPENJSON`. Atomically inserted records into `LBS_ACR_DebtorTransactionAllocations`, incremented `AllocatedAmountHome` across debit and credit transactions, appended transaction reference audit trails (`InvoiceNotes1`), reversed warehouse inventory stock, and updated debtor balances within strict `TRY...CATCH` transaction blocks. On the frontend side, developed responsive Angular interfaces with AG Grid and Reactive Forms enabling users to pick original sales order items, enforce return quantity caps, auto-allocate FIFO or manually distribute refund amounts, and provide instant visual feedback on unallocated balances before submission.",
@@ -490,7 +490,7 @@ export const CERTIFICATION_ITEMS: CertificationItem[] = [
     imageUrl: "/certificates/hackaura-certificate.jpg",
     projectName: "CriminalDetector.py",
     projectUrl: "https://github.com/hardikjari/CriminalDetector.py",
-    description: "Successfully participated in the HackAura Hackathon and engineered 'CriminalDetector.py' — an integrated AI surveillance platform combining an Angular frontend, an ASP.NET Core Web API backend, and a Python computer vision facial recognition model for real-time person-of-interest detection across live camera feeds.",
+    description: "Successfully participated in the HackAura Hackathon and engineered 'CriminalDetector.py' an integrated AI surveillance platform combining an Angular frontend, an ASP.NET Core Web API backend, and a Python computer vision facial recognition model for real-time person-of-interest detection across live camera feeds.",
     technologies: ["Python", "Computer Vision / AI", "ASP.NET Core API", "Angular", "Real-Time Surveillance"],
   },
 ];
@@ -503,7 +503,7 @@ export const CERTIFICATIONS = {
 export const CAREER_GOALS = {
   title: "Focused Engineering Growth",
   primaryIdentity: "Full-Stack .NET / Angular Software Engineer",
-  statement: "Primary identity stays firmly grounded as a Full-Stack .NET / Angular Software Engineer. Actively growing toward advanced backend/cloud engineering, scalable system design, and AI/ML — framed as natural extensions of enterprise backend work, not a pivot.",
+  statement: "Primary identity stays firmly grounded as a Full-Stack .NET / Angular Software Engineer. Actively growing toward advanced backend/cloud engineering, scalable system design, and AI/ML framed as natural extensions of enterprise backend work, not a pivot.",
   focusAreas: [
     {
       title: "Backend & Cloud Architecture",
