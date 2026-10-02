@@ -84,6 +84,7 @@ export const SKILLS: SkillItem[] = [
 
   // Other — Familiar With
   { name: "Firebase (Auth, Realtime DB & FCM Push Notifications)", category: "other", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 86, highlight: true },
+  { name: "OpenAI API & Speech Recognition", category: "other", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 80, highlight: true },
   { name: "Redis / Memurai", category: "other", level: "familiar-with", levelLabel: "Familiar With", proficiencyScore: 65 },
   { name: "Docker", category: "other", level: "familiar-with", levelLabel: "Familiar With", proficiencyScore: 62 },
   { name: "Swagger / OpenAPI", category: "other", level: "familiar-with", levelLabel: "Familiar With", proficiencyScore: 84 },
@@ -229,6 +230,40 @@ export const PROJECTS: ProjectItem[] = [
       "Implemented JWT authentication and RBAC dependency injection to guard admin actions (creating, updating, and deleting books).",
       "Built flexible catalog querying with ILIKE multi-field search, filters, dynamic ASC/DESC sorting, and structured pagination metadata.",
       "Used Pydantic v2 schemas and centralized exception handlers for consistent, predictable JSON responses.",
+    ],
+  },
+  {
+    id: "friday-voice-assistant-python",
+    title: "FRIDAY AI Voice Assistant",
+    subtitle: "Python • OpenAI GPT • Speech Recognition • gTTS & Fuzzy Matching",
+    category: "AI Voice Assistant",
+    githubUrl: "https://github.com/hardikjari/friday-voice-assistant-python",
+    summary: "Interactive AI desktop voice assistant in Python featuring wake-word listening, real-time speech interruption, OpenAI GPT dialogue, fuzzy music matching, and live news headlines.",
+    description: "A modular, interactive desktop voice assistant built in Python inspired by Tony Stark's FRIDAY. It listens for the 'Friday' wake word using Google Speech Recognition, processes conversational prompts using the OpenAI API (formatted concisely for natural audio delivery), and dynamically interrupts speech output in real-time when the user says 'Stop Friday' using background audio threading. Includes a smart music player with exact and fuzzy matching fallback via difflib, live top news headline reading via NewsData.io API, and automated web shortcuts.",
+    technologies: [
+      "Python 3.8+",
+      "OpenAI API",
+      "SpeechRecognition",
+      "gTTS (Google TTS)",
+      "Pygame Mixer",
+      "pyttsx3",
+      "Threading",
+      "difflib (Fuzzy Match)",
+      "NewsData.io API",
+    ],
+    keyModules: [
+      "Wake-Word Listening & Activation ('Friday')",
+      "Real-Time Voice Interruption Handler (threading.Event)",
+      "OpenAI GPT Conversational Dialogue Engine",
+      "Smart Music Matcher (Exact, Substring & Fuzzy Match)",
+      "Live News Headline Parser (NewsData.io)",
+      "Dual TTS Engine (gTTS Online & pyttsx3 Offline)",
+    ],
+    architecture: "Microphone Audio Stream → SpeechRecognition Google API → Wake Word / Command Parser → Multi-Threaded Dispatcher (OpenAI / Music Matcher / NewsAPI / Browser) → Dual TTS Engine (gTTS + Pygame Mixer) with Threaded Stop Interrupter",
+    highlights: [
+      "Engineered real-time voice interruption using background audio listener threads (threading.Event) allowing users to cut assistant speech immediately by saying 'Stop Friday'.",
+      "Integrated OpenAI GPT API with custom voice prompt shaping, ensuring responses are markdown-free and limited to 2 conversational sentences.",
+      "Built a resilient music search engine combining exact search, space-insensitive matching, and difflib fuzzy matching fallback to launch songs on YouTube.",
     ],
   },
   {

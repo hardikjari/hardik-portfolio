@@ -21,7 +21,8 @@ import {
   FileText,
   X,
   ShieldCheck,
-  Zap
+  Zap,
+  Mic
 } from "lucide-react";
 import { GithubIcon } from "./ui/Icons";
 
@@ -85,6 +86,8 @@ export function Projects() {
         return <Monitor className="w-5 h-5 text-blue-400" />;
       case "REST API":
         return <Server className="w-5 h-5 text-emerald-400" />;
+      case "AI Voice Assistant":
+        return <Mic className="w-5 h-5 text-purple-400" />;
       default:
         return <Layers className="w-5 h-5 text-[var(--accent-cyan)]" />;
     }

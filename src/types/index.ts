@@ -29,7 +29,7 @@ export interface ProjectItem {
   title: string;
   subtitle: string;
   isFlagship?: boolean;
-  category: "Enterprise ERP" | "ERP Module" | "Web Application" | "Mobile/Web App" | "Desktop Application" | "Web Portal & Microservices" | "REST API";
+  category: "Enterprise ERP" | "ERP Module" | "Web Application" | "Mobile/Web App" | "Desktop Application" | "Web Portal & Microservices" | "REST API" | "AI Voice Assistant";
   summary: string;
   description: string;
   technologies: string[];
