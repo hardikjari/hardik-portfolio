@@ -123,9 +123,9 @@ export function Projects() {
     >
       <div className="max-w-6xl mx-auto">
         <SectionHeading
-          badge="Featured Portfolio"
-          title="Engineered Systems & Projects"
-          subtitle="Real-world platforms, EV station portals, workforce shift management, and enterprise ERP systems built across ASP.NET Core microservices, Angular, and SQL Server."
+          badge="Projects"
+          title="Featured Projects & Systems"
+          subtitle="A collection of web platforms, EV charging station portals, shift management tools, and enterprise ERP systems I've built."
         />
 
         {/* Project Grid */}
@@ -146,7 +146,7 @@ export function Projects() {
                 {project.isFlagship && (
                   <div className="absolute -top-3 right-6 px-3 py-0.5 rounded-full text-[10px] font-mono font-semibold bg-cyan-500 text-slate-950 shadow-md shadow-cyan-500/25 uppercase tracking-wider flex items-center gap-1">
                     <Sparkles className="w-3 h-3" />
-                    Primary Project
+                    Featured Project
                   </div>
                 )}
 
@@ -215,7 +215,7 @@ export function Projects() {
 
                   <div className="flex items-center justify-between text-xs font-mono font-medium pt-1">
                     <span className="text-[var(--accent-cyan)] flex items-center gap-1 group-hover:underline">
-                      <span>View Architecture Details</span>
+                      <span>View Project Details</span>
                       <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </span>
                     {project.githubUrl && (
@@ -253,7 +253,7 @@ export function Projects() {
                     </span>
                     {selectedProject.isFlagship && (
                       <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500 text-slate-950 font-bold">
-                        Primary Project
+                        Featured Project
                       </span>
                     )}
                     {selectedProject.githubUrl && (

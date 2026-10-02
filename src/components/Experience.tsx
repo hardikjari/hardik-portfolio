@@ -86,9 +86,9 @@ export function Experience() {
     >
       <div className="max-w-5xl mx-auto">
         <SectionHeading
-          badge="Work History"
-          title="Professional Experience"
-          subtitle="Real-world enterprise development track record delivering full-stack solutions and resolving complex production challenges."
+          badge="Experience"
+          title="Where I've Worked"
+          subtitle="My journey building full-stack enterprise applications, tackling production challenges, and shipping features end-to-end."
         />
 
         <div className="relative pl-8 sm:pl-12">

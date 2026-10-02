@@ -82,9 +82,9 @@ export function Architecture() {
     >
       <div className="max-w-6xl mx-auto">
         <SectionHeading
-          badge="Enterprise Stack Architecture"
-          title="Full-Stack Application Flow"
-          subtitle="A clean vertical architectural pipeline illustrating how requests flow from the Angular client UI through ASP.NET Core API, business service logic, and Dapper/EF down to SQL Server stored procedures."
+          badge="System Architecture"
+          title="How Data Flows Through My Applications"
+          subtitle="A visual walkthrough of how requests travel across the stack — from the Angular frontend UI down to SQL Server stored procedures."
         />
 
         {/* Interactive Architecture Flow Grid */}
@@ -163,7 +163,7 @@ export function Architecture() {
               {/* Description */}
               <div className="space-y-1.5">
                 <div className="text-xs font-mono uppercase tracking-widest text-[var(--text-subtle)]">
-                  Tier Purpose & Scope
+                  Layer Purpose
                 </div>
                 <p className="text-sm text-[var(--text-main)] leading-relaxed">
                   {activeLayer.description}
@@ -173,7 +173,7 @@ export function Architecture() {
               {/* Responsibilities */}
               <div className="space-y-2.5">
                 <div className="text-xs font-mono uppercase tracking-widest text-[var(--text-subtle)]">
-                  Key Technical Responsibilities
+                  Key Responsibilities
                 </div>
                 <ul className="space-y-2">
                   {activeLayer.keyResponsibilities.map((resp, rIdx) => (
@@ -189,7 +189,7 @@ export function Architecture() {
               <div className="p-4 rounded-xl bg-[var(--bg-surface-subtle)] border border-[var(--border-subtle)] space-y-1">
                 <div className="text-xs font-mono font-semibold text-[var(--accent-cyan)] flex items-center gap-1.5">
                   <ShieldCheck className="w-4 h-4" />
-                  Hardik&apos;s Hands-on Contributions in this Tier:
+                  My Hands-on Role in this Layer:
                 </div>
                 <p className="text-xs text-[var(--text-muted)] leading-relaxed">
                   {activeLayer.hardikRoleNote}
@@ -199,7 +199,7 @@ export function Architecture() {
               {/* Technologies in this tier */}
               <div className="pt-2">
                 <div className="text-[11px] font-mono text-[var(--text-subtle)] uppercase tracking-wider mb-2">
-                  Technologies / Patterns Used:
+                  Technologies & Patterns:
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {activeLayer.technologies.map((tech) => (

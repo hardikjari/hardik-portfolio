@@ -110,7 +110,7 @@ export function Hero() {
         {/* Name & Headline */}
         <div className="space-y-3 mb-6">
           <p className="hero-title-line text-sm sm:text-base font-mono uppercase tracking-widest text-[var(--text-muted)]">
-            Hi, my name is
+            Hi, I&apos;m
           </p>
           <h1
             ref={headlineRef}

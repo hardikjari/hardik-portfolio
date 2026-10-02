@@ -61,9 +61,9 @@ export function About() {
     >
       <div className="max-w-6xl mx-auto">
         <SectionHeading
-          badge="Professional Background"
-          title="About Hardik Jariwala"
-          subtitle="Full-stack engineer specialized in high-integrity enterprise systems, end-to-end feature delivery, and robust database architectures."
+          badge="About Me"
+          title="Hey, I'm Hardik Jariwala"
+          subtitle="Full-stack software engineer with 2+ years of hands-on experience building dependable enterprise systems, web applications, and database architectures."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -105,7 +105,7 @@ export function About() {
             {/* End-to-End Ownership Flow Card */}
             <div className="anime-about-item p-6 rounded-2xl glass-card border border-[var(--border-subtle)]">
               <h3 className="text-xs font-mono uppercase tracking-widest text-[var(--text-subtle)] mb-4">
-                End-to-End Feature Ownership Paradigm
+                How I Build & Ship Features (Full-Stack Flow)
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div className="p-3 rounded-xl bg-[var(--bg-surface)] border border-[var(--border-subtle)] text-center">
@@ -151,7 +151,7 @@ export function About() {
             <div className="anime-about-item p-6 rounded-2xl glass-card border border-[var(--border-subtle)] space-y-4">
               <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[var(--accent-cyan)]">
                 <Layers className="w-4 h-4" />
-                <span>Enterprise ERP & Application Domains</span>
+                <span>Enterprise ERP & Application Modules I&apos;ve Worked On</span>
               </div>
 
               <ul className="space-y-2.5 text-xs sm:text-sm text-[var(--text-muted)]">

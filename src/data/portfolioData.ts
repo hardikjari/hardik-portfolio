@@ -13,8 +13,8 @@ export const PORTFOLIO_INFO = {
   name: "Hardik Jariwala",
   role: "Full-Stack .NET & Angular Software Engineer",
   headline: "Full-Stack .NET & Angular Software Engineer",
-  subtext: "Full-stack engineer with hands-on experience building scalable applications ASP.NET Core APIs & microservices, Angular front ends, real-time Firebase systems, and SQL Server enterprise architectures.",
-  status: "Available for Full-Stack .NET & Angular Opportunities",
+  subtext: "I build reliable web applications and enterprise systems using ASP.NET Core, Angular, and SQL Server. From designing complex database stored procedures to building responsive, real-time frontends, I like owning features end-to-end.",
+  status: "Open to Full-Stack .NET & Angular Opportunities",
   yearsExperience: "2+ Years",
 };
 
@@ -29,12 +29,11 @@ export const CONTACT_INFO: ContactInfo = {
 };
 
 export const ABOUT_ME = {
-  summary: `Hardik Jariwala is a full-stack software engineer with roughly 2+ years of professional experience, currently working across the ASP.NET Core / Angular / SQL Server stack. He started as a .NET Intern at CodexLancers (Jan 2024) and progressed into an SDE-1 role, taking on end-to-end ownership of features from UI through API through business logic to the database.`,
-  coreStrengths: `Core strength is backend and database engineering designing mission-critical stored-procedure logic, transaction allocation engines, and enterprise business rules paired with building responsive Angular front ends, AG Grid workflows, and custom recursive tree architectures.`,
-  flagshipWork: `Primary project is DIZ, an on-demand ride-hailing platform built with Angular and Firebase for real-time ride dispatch and live tracking. Also engineered the Time Tracking Tool featuring employee shift management, real-time shift tracking, and web-to-mobile push notifications via Firebase, and ProRanked an EV (Electric Vehicle) charging station administration web portal built with Angular and an ASP.NET Core microservices API backend. In addition, brings deep enterprise ERP experience across LinkERP modules: complex financial transaction allocation (Debit/Credit), customer product return workflows across SQL Server stored procedures and Angular, and access-controlled Document Management with custom recursive tree structures.`,
-  // educationAndGrowth: `He holds an MCA (completed 2024) and is currently deepening his interest in backend/cloud systems and AI/ML.`,
+  summary: `I'm a full-stack software engineer with 2+ years of hands-on experience building enterprise business systems and web applications. I started as a .NET intern at CodexLancers in January 2024, proved myself by solving critical ERP challenges, and stepped up into an SDE-1 role owning features end-to-end from database schemas and stored procedures to backend APIs and Angular user interfaces.`,
+  coreStrengths: `My primary strength is backend and database engineering designing dependable stored procedures, complex financial allocation logic, and clean REST APIs. On the frontend, I focus on building responsive Angular interfaces, high-density AG Grid tables, and lightweight custom UI components without relying on unnecessary external packages.`,
+  flagshipWork: `Some of the key projects I've built include DIZ (an on-demand ride-hailing platform with real-time Firebase tracking), an EV charging station admin portal with .NET microservices (ProRanked), and a shift management tool with Firebase Cloud Messaging push alerts. I've also spent significant time working on LinkERP, tackling complex financial allocation algorithms (matching debit/credit invoices), customer product returns with automated warehouse restocking, and an access-controlled Document Management System.`,
   highlights: [
-    { label: "Experience", value: "2+ Years Professional" },
+    { label: "Experience", value: "2+ Years Hands-on" },
     { label: "Current Role", value: "SDE-1 at CodexLancers" },
     { label: "Core Stack", value: "ASP.NET Core • Angular • SQL Server" },
     { label: "Education", value: "MCA (Graduated 2024)" },
@@ -56,8 +55,6 @@ export const SKILLS: SkillItem[] = [
   { name: "Exception Handling & Logging", category: "backend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 88 },
   { name: "Python", category: "backend", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 82, highlight: true },
   { name: "FastAPI", category: "backend", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 84, highlight: true },
-  // { name: "Unit Testing", category: "backend", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 80 },
-  // { name: "Microservices", category: "backend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 88, highlight: true },
 
   // Frontend — Strong / Hands-on
   { name: "Angular", category: "frontend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 90, highlight: true },
@@ -65,40 +62,31 @@ export const SKILLS: SkillItem[] = [
   { name: "HTML & CSS", category: "frontend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 90 },
   { name: "Angular Material", category: "frontend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 86 },
   { name: "AG Grid", category: "frontend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 88, highlight: true },
-  // { name: "PrimeNG", category: "frontend", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 82 },
   { name: "RxJS", category: "frontend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 85 },
   { name: "Reactive Forms", category: "frontend", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 90 },
   { name: "Angular 7 → 17 Migration", category: "frontend", level: "hands-on", levelLabel: "Hands-on Experience", proficiencyScore: 86, highlight: true },
 
   // Database — Strong / Hands-on
   { name: "SQL Server", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 94, highlight: true },
-  // { name: "T-SQL", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 92, highlight: true },
   { name: "Stored Procedures", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 95, highlight: true },
-  { name: "Complex Joins & Subqueries", category: "database", level: "working-knowledge", levelLabel: "Working Knowledge", proficiencyScore: 50, highlight: true },
-  // { name: "Indexes & Query Optimization", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 88, highlight: true },
-  // { name: "Transactions & Isolation", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 88 },
+  { name: "Complex Joins & Subqueries", category: "database", level: "working-knowledge", levelLabel: "Working Knowledge", proficiencyScore: 88, highlight: true },
   { name: "Database Debugging", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 90 },
   { name: "PostgreSQL", category: "database", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 82, highlight: true },
-  // { name: "JSON Handling in T-SQL", category: "database", level: "hands-on", levelLabel: "Hands-on", proficiencyScore: 85 },
   { name: "Constraints & Foreign Keys", category: "database", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 90 },
 
   // DevOps & Deployment — Working Knowledge
   { name: "IIS (Internet Information Services)", category: "devops", level: "working-knowledge", levelLabel: "Working Knowledge", proficiencyScore: 78, highlight: true },
-  // { name: "Node.js Deployment", category: "devops", level: "working-knowledge", levelLabel: "Working Knowledge", proficiencyScore: 75 },
   { name: "PM2 Process Manager", category: "devops", level: "working-knowledge", levelLabel: "Working Knowledge", proficiencyScore: 74 },
   { name: "Git & GitLab", category: "devops", level: "working-knowledge", levelLabel: "Working Knowledge", proficiencyScore: 85 },
   { name: "API & Angular Deployment", category: "devops", level: "working-knowledge", levelLabel: "Working Knowledge", proficiencyScore: 80 },
-  // { name: "Server Troubleshooting", category: "devops", level: "working-knowledge", levelLabel: "Working Knowledge", proficiencyScore: 80 },
   { name: "Port Configuration & CORS", category: "devops", level: "working-knowledge", levelLabel: "Working Knowledge", proficiencyScore: 84 },
   { name: "Reverse Proxy & IIS URL Rewrite", category: "devops", level: "working-knowledge", levelLabel: "Working Knowledge", proficiencyScore: 76 },
 
   // Other — Familiar With
   { name: "Firebase (Auth, Realtime DB & FCM Push Notifications)", category: "other", level: "strong-experience", levelLabel: "Strong / Hands-on", proficiencyScore: 86, highlight: true },
-  // { name: "Stripe Payment Gateway", category: "other", level: "familiar-with", levelLabel: "Familiar With", proficiencyScore: 68 },
   { name: "Redis / Memurai", category: "other", level: "familiar-with", levelLabel: "Familiar With", proficiencyScore: 65 },
   { name: "Docker", category: "other", level: "familiar-with", levelLabel: "Familiar With", proficiencyScore: 62 },
   { name: "Swagger / OpenAPI", category: "other", level: "familiar-with", levelLabel: "Familiar With", proficiencyScore: 84 },
-  // { name: "RDLC Reporting", category: "other", level: "familiar-with", levelLabel: "Familiar With", proficiencyScore: 72 },
 ];
 
 export const EXPERIENCE_LIST: ExperienceItem[] = [
@@ -108,18 +96,18 @@ export const EXPERIENCE_LIST: ExperienceItem[] = [
     period: "January 2024 – Present",
     isCurrent: true,
     type: "Full-Time",
-    summary: "Progressed from a .NET internship into a full SDE-1 role delivering enterprise application features end-to-end across ASP.NET Core, Angular, and SQL Server.",
+    summary: "Joined as a .NET intern and stepped up into an SDE-1 role, taking end-to-end ownership of core enterprise features across ASP.NET Core, Angular, and SQL Server.",
     achievements: [
-      "Progressed from a .NET internship into a full SDE-1 role delivering enterprise application features end-to-end.",
-      "Built and maintained ASP.NET Core Web APIs and Angular front ends for a multi-module ERP system (LinkERP).",
-      "Engineered the financial Transaction Allocation Engine (Debit/Credit Allocation) and Customer Product Return / Debtor Refund pipelines across atomic SQL Server stored procedures (OPENJSON, isolation locks) and reactive Angular AG Grid interfaces.",
-      "Architected the Document Management System (DMS) module utilizing a custom recursive Angular ng-template tree view (unlimited folder depth, drag-and-drop, zero external tree package bloat) and granular role-based access control (RBAC).",
-      "Wrote and optimized SQL Server stored procedures; implemented business logic at the database and API layers.",
-      "Owned features across the full stack: UI → API → business logic → database.",
-      "Debugged and resolved production issues (SQL errors, API errors, Angular runtime issues, deployment/IIS/CORS problems).",
-      "Collaborated with QA on test scenarios and with clients on requirement analysis.",
-      "Participated in Git/GitLab-based feature branching and code review workflows.",
-      "Contributed to deployment and server-side support tasks.",
+      "Promoted from .NET Intern to SDE-1 after taking full ownership of features across the backend and frontend.",
+      "Built and maintained RESTful APIs in ASP.NET Core (.NET 8) and interactive frontend views in Angular for LinkERP.",
+      "Engineered the Debit/Credit Transaction Allocation engine in SQL Server using OPENJSON batch processing and AG Grid, ensuring 100% balance accuracy without ledger discrepancies.",
+      "Built the Customer Product Return & Debtor Refund workflow end-to-end: handling warehouse bin restocking, credit note generation, and tax recalculations in atomic SQL transactions.",
+      "Developed a lightweight Document Management System (DMS) with a custom recursive Angular template (*ngTemplateOutlet) for drag-and-drop folder nesting and role-based permissions.",
+      "Wrote, refactored, and tuned SQL Server stored procedures and database indexes to keep high-volume queries fast.",
+      "Diagnosed and resolved live production bugs from SQL deadlocks and NULL data conversion issues to CORS misconfigurations and IIS deployment issues.",
+      "Collaborated with QA teams on test coverage and worked closely on client requirement breakdowns.",
+      "Maintained code quality through Git/GitLab feature branching and peer code reviews.",
+      "Supported staging and production deployment tasks on Windows/IIS servers.",
     ],
     technologies: [
       "ASP.NET Core",
@@ -128,7 +116,6 @@ export const EXPERIENCE_LIST: ExperienceItem[] = [
       "Angular 17",
       "TypeScript",
       "SQL Server",
-      // "T-SQL",
       "Stored Procedures",
       "Dapper",
       "Entity Framework",
@@ -143,11 +130,11 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: "diz-ride-hailing",
     title: "DIZ Ride Hailing Platform",
-    subtitle: "Primary Project On-Demand Ride Dispatch & Fleet Telemetry",
+    subtitle: "Real-Time On-Demand Ride Dispatch & Live Telemetry",
     isFlagship: true,
     category: "Mobile/Web App",
-    summary: "On-demand ride-hailing and dispatch application providing real-time pick-up and drop-off services, reactive ride booking, driver coordination, and Firebase authentication.",
-    description: "Hardik's primary flagship project an on-demand ride-hailing and fleet coordination platform engineered to provide dynamic pick-up and drop-off transport services. Features reactive client booking interfaces built in Angular, live trip status tracking, driver assignment updates, and secure user session management powered by Firebase.",
+    summary: "On-demand ride booking and fleet dispatch application with real-time pickup/drop-off routing, live driver tracking, and Firebase authentication.",
+    description: "An on-demand ride-hailing platform built to handle quick pickup and drop-off requests. I engineered the client booking flows in Angular with reactive state management, integrated Firebase Realtime Database for live driver telemetry and trip status syncing, and handled user authentication.",
     technologies: [
       "Angular",
       "TypeScript",
@@ -159,18 +146,18 @@ export const PROJECTS: ProjectItem[] = [
       "HTML & CSS",
     ],
     highlights: [
-      "Engineered end-to-end reactive ride booking user flows with real-time pickup and drop-off location handling.",
-      "Integrated Firebase Authentication and Realtime Database for live telemetry, trip status synchronization, and driver dispatch.",
-      "Architected resilient client-side state pipelines using RxJS observables for seamless trip tracking without page refreshes.",
+      "Built reactive booking flows with live pickup and drop-off location handling in Angular.",
+      "Integrated Firebase Authentication and Realtime Database for instant trip updates and driver status synchronization.",
+      "Used RxJS observables to manage live ride states smoothly without unnecessary re-renders or page refreshes.",
     ],
   },
   {
     id: "time-tracking-tool",
     title: "Time Tracking & Shift Management Tool",
-    subtitle: "Employee Shift Management & Web-to-Mobile Push Notifications",
+    subtitle: "Employee Shift Scheduling & Web-to-Mobile Push Alerts",
     category: "Web Application",
-    summary: "Workforce platform for employee shift management, real-time shift tracking, and cross-platform push notifications from web to mobile devices via Firebase.",
-    description: "An operational enterprise tool dedicated to employee shift management and hours tracking. Enables supervisors to schedule, track, and approve employee shifts with real-time status transitions. Features cross-platform push notifications sent from the web management portal directly to employee mobile devices using Firebase Cloud Messaging (FCM).",
+    summary: "Workforce management platform for scheduling employee shifts, tracking active work hours, and triggering instant mobile push notifications from the web portal via Firebase.",
+    description: "An operational platform for managing employee shifts and work hours. It gives supervisors the ability to schedule, monitor, and approve shifts in real-time. I also integrated Firebase Cloud Messaging (FCM) to send instant push alerts from the web management portal directly to employees' mobile devices when shifts update.",
     technologies: [
       "ASP.NET Core",
       "C#",
@@ -182,18 +169,18 @@ export const PROJECTS: ProjectItem[] = [
       "REST APIs",
     ],
     highlights: [
-      "Engineered employee shift management modules: shift scheduling, real-time tracking, and supervisor review workflows.",
-      "Integrated Firebase Cloud Messaging (FCM) to trigger real-time push notifications from the web portal to mobile apps for shift alerts.",
-      "Built resilient backend ASP.NET Core REST APIs and SQL Server schemas for shift allocation, tracking logs, and approvals.",
+      "Built shift scheduling, live check-in tracking, and manager approval review workflows.",
+      "Integrated Firebase Cloud Messaging (FCM) for real-time web-to-mobile shift change notifications.",
+      "Designed backend ASP.NET Core REST endpoints and SQL Server schemas for shift allocation, tracking logs, and approvals.",
     ],
   },
   {
     id: "proranked-ev-portal",
     title: "ProRanked EV Station Admin Portal",
-    subtitle: "EV Charging Station Management & Microservices Architecture",
+    subtitle: "EV Charging Station Management & Telemetry Web Portal",
     category: "Web Portal & Microservices",
-    summary: "Centralized web administration panel for managing Electric Vehicle (EV) charging stations, charger telemetry, and operations using Angular and .NET microservices.",
-    description: "A centralized web portal and administration platform for managing Electric Vehicle (EV) charging stations across diverse locations. Built with a modern Angular frontend for dynamic station control and backed by high-throughput ASP.NET Core Web APIs architected with microservices to handle station telemetry, status monitoring, and transactions.",
+    summary: "Centralized admin dashboard for monitoring Electric Vehicle (EV) charging stations, charger telemetry, and live station availability using Angular and .NET microservices.",
+    description: "An administrative web portal designed to manage EV charging stations across diverse locations. I built the frontend in Angular for real-time station monitoring and worked on ASP.NET Core Web API microservices to process charging session telemetry, station availability, and transaction data.",
     technologies: [
       "Angular",
       "TypeScript",
@@ -205,19 +192,19 @@ export const PROJECTS: ProjectItem[] = [
       "REST APIs",
     ],
     highlights: [
-      "Engineered administrative web portal in Angular for real-time EV charging station monitoring, status updates, and operational controls.",
-      "Architected and implemented .NET Web API microservices to handle station data, charging telemetry, and transactional commands.",
-      "Designed clean modular services ensuring high availability and fault-tolerant communication between station endpoints and admin dashboards.",
+      "Built the Angular admin dashboard for monitoring charger statuses, power delivery, and station health.",
+      "Implemented backend .NET Web API microservices to process telemetry streams and station commands.",
+      "Structured modular services for clear separation between telemetry data processing and dashboard controls.",
     ],
   },
   {
     id: "book-library-python-api",
     title: "Book Library RESTful API",
-    subtitle: "FastAPI • Python • PostgreSQL • JWT Auth & RBAC",
+    subtitle: "FastAPI • Python 3.14 • PostgreSQL • JWT Auth & RBAC",
     category: "REST API",
     githubUrl: "https://github.com/hardikjari/book-library-python-api",
-    summary: "High-performance RESTful API for book library catalog management built with FastAPI, SQLAlchemy 2.0, and PostgreSQL. Features JWT authentication, role-based access control (Admin/User), ILIKE search, multi-criteria filtering, dynamic sorting, and structured pagination.",
-    description: "A production-grade RESTful backend API engineered in Python and FastAPI for comprehensive book library catalog management. Architected with clean modular separation of concerns across models, schemas, routers, and dependencies. Implements secure OAuth2 JWT bearer token authentication with bcrypt password hashing and strict Role-Based Access Control (RBAC) protecting admin-only operations (book creation, updates, and deletion). Delivers advanced catalog exploration with case-insensitive multi-field search (title, author), granular filtering (category, publication year), dynamic multi-column sorting (ASC/DESC), and paginated responses with complete page metadata backed by SQLAlchemy 2.0 and PostgreSQL.",
+    summary: "High-performance RESTful API for book library catalog management built with FastAPI, SQLAlchemy 2.0, and PostgreSQL with role-based access control, search, and pagination.",
+    description: "A clean, modular REST API backend I built in Python and FastAPI to practice advanced API patterns. It features JWT token authentication with bcrypt password hashing, role-based permissions (Admin vs User), case-insensitive multi-field search (ILIKE), filtering by category and publication year, dynamic multi-column sorting, and structured pagination with Pydantic v2 validation.",
     technologies: [
       "FastAPI",
       "Python 3.14",
@@ -234,23 +221,23 @@ export const PROJECTS: ProjectItem[] = [
       "JWT OAuth2 Bearer Authentication & Bcrypt Hashing",
       "Catalog Search & Multi-Filter Engine (Title, Author, Year, Category)",
       "Dynamic Multi-Column Sorting & Paginated Metadata",
-      "ISBN Uniqueness Validation & Integrity Enforcement",
+      "ISBN Uniqueness Validation & Data Integrity Enforcement",
       "Global Centralized Exception & Validation Handlers",
     ],
     architecture: "FastAPI Router Layer → Dependency Injection (Auth / RBAC / DB Session) → Pydantic v2 Schema Validation → SQLAlchemy 2.0 ORM → PostgreSQL Database",
     highlights: [
-      "Engineered secure JWT authentication and role-based access control (RBAC) via FastAPI dependency injection, gating administrative book mutations to verified admin roles.",
-      "Implemented high-performance catalog querying supporting case-insensitive ILIKE search, category & year filters, dynamic ASC/DESC sorting, and structured pagination metadata.",
-      "Enforced strict schema validation and error handling using Pydantic v2 with centralized exception handlers returning uniform JSON error responses.",
+      "Implemented JWT authentication and RBAC dependency injection to guard admin actions (creating, updating, and deleting books).",
+      "Built flexible catalog querying with ILIKE multi-field search, filters, dynamic ASC/DESC sorting, and structured pagination metadata.",
+      "Used Pydantic v2 schemas and centralized exception handlers for consistent, predictable JSON responses.",
     ],
   },
   {
     id: "linkerp",
     title: "LinkERP / LinkERP-V2",
-    subtitle: "Enterprise ERP / Business Management Platform",
+    subtitle: "Enterprise ERP & Business Management Platform",
     category: "Enterprise ERP",
-    summary: "A comprehensive, multi-module enterprise ERP powering mission-critical workflows including financial Transaction Amount Allocation, Customer Product Returns & Debtor Refunds, Inventory, Purchasing, Sales Order Processing, Pharmacy logic, and Document Management.",
-    description: "A large-scale, multi-module enterprise ERP platform. Hardik engineered mission-critical business features across the full application lifecycle: designing complex financial transaction allocation algorithms, customer product return and inventory replenishment workflows across stored procedures and Angular front ends, architecting REST APIs, implementing robust role-based access control, and optimizing high-throughput SQL Server database engines.",
+    summary: "A multi-module enterprise ERP powering critical business workflows including financial Debit/Credit allocation, customer returns with automated inventory restock, purchasing, and document management.",
+    description: "A large-scale enterprise ERP where I deliver full-stack features day-to-day. My main focus areas include the financial amount allocation engine (matching receipts and credit notes to debit invoices), customer product return workflows with automated warehouse bin restocking, and optimizing high-volume SQL Server stored procedures.",
     technologies: [
       "ASP.NET Core",
       ".NET 8",
@@ -280,18 +267,18 @@ export const PROJECTS: ProjectItem[] = [
       "Vendor & Supplier Management",
     ],
     highlights: [
-      "Engineered the Debit/Credit Transaction Amount Allocation engine in SQL Server (using OPENJSON batching) and Angular AG Grid, ensuring real-time invoice matching, partial allocation splits, and zero ledger imbalances.",
-      "Implemented the Customer Product Return & Debtor Refund workflow end-to-end: coordinating inventory restock into warehouse bins, creating debtor credit notes, reversing taxes/COGS, and reallocating original invoice balances in atomic ACID transactions.",
-      "Delivered full-stack features from Angular front ends through ASP.NET Core APIs down to T-SQL stored procedures with high-performance AG Grid tables.",
+      "Engineered the Debit/Credit Allocation engine in SQL Server using OPENJSON batching and Angular AG Grid, ensuring accurate invoice matching and zero ledger drift.",
+      "Built the Customer Return & Debtor Refund workflow end-to-end: coordinating warehouse inventory replenishment, debtor credit notes, and tax reversals in atomic ACID transactions.",
+      "Delivered full-stack features from Angular frontends through ASP.NET Core APIs down to T-SQL stored procedures with high-performance AG Grid tables.",
     ],
   },
   {
     id: "document-management-system",
     title: "Document Management System (DMS)",
-    subtitle: "Access-Controlled ERP Subsystem",
+    subtitle: "Access-Controlled Hierarchical File Management Module",
     category: "ERP Module",
-    summary: "Custom recursive tree-structured document navigation, granular user & role-level access control, drag-and-drop folder re-parenting, secure Base64 document uploading, and AG Grid file management.",
-    description: "A security-critical subsystem within LinkERP. Rather than relying on heavy third-party tree packages, this module was engineered with a custom recursive Angular ng-template (*ngTemplateOutlet) supporting arbitrary nesting depth, HTML5 drag-and-drop re-parenting, inline folder renaming, dynamic breadcrumb trails, and right-pane AG Grid file views. Enforces strict role-based and user-specific authorization so users only ever see and operate on folders and files explicitly granted to them.",
+    summary: "Custom recursive folder tree with infinite nesting depth, drag-and-drop folder moves, Base64 document uploads, and granular role-based permissions in AG Grid.",
+    description: "A secure document storage subsystem within LinkERP. Instead of installing a heavy third-party tree package, I wrote a custom recursive Angular template (*ngTemplateOutlet) with HTML5 drag-and-drop, inline folder renaming, and dynamic breadcrumbs. It enforces a strict 3-tier authorization model (Admin, Editor, Viewer) so users only see and edit folders they are explicitly granted access to.",
     technologies: [
       "Angular 17",
       "TypeScript",
@@ -310,18 +297,18 @@ export const PROJECTS: ProjectItem[] = [
     ],
     architecture: "Custom Recursive Angular Tree (*ngTemplateOutlet) + AG Grid → ASP.NET Core Web API → C# RBAC Authorization Layer → SQL Server Recursive Folder Queries & Stored Procedures",
     highlights: [
-      "Engineered a lightweight hierarchical folder tree using native Angular recursive ng-template (*ngTemplateOutlet) with zero external tree package bloat, featuring infinite nesting, drag-and-drop re-parenting, and inline editing.",
-      "Enforced a 3-tier role-wise permission matrix (Admin, Editor, Viewer via SecurityAccessEnum) dynamically gating UI buttons (Add Folder/Subfolder, Rename, Delete, Upload, Security Modal) and validating caller authorization in C# APIs and Stored Procedures.",
-      "Integrated AG Grid for high-density folder file browsing, Base64 document uploads, multi-column sorting, search filtering, and download actions.",
+      "Built a lightweight hierarchical folder tree using Angular's native recursive ng-template (*ngTemplateOutlet), supporting unlimited nesting, drag-and-drop moves, and inline editing without external package bloat.",
+      "Implemented a 3-tier RBAC permission model (Admin, Editor, Viewer) enforced both in the UI action buttons and verified in C# API endpoints and stored procedures.",
+      "Integrated AG Grid for fast document browsing, Base64 uploads, search filtering, and file downloads.",
     ],
   },
   {
     id: "sutraplus",
     title: "SutraPlus",
-    subtitle: "Desktop Business Management Application",
+    subtitle: "WPF Enterprise Desktop Application",
     category: "Desktop Application",
-    summary: "WPF-based enterprise desktop application built with C# and ADO.NET, delivering robust local database interactions, transactional business logic, and rich UI forms.",
-    description: "Desktop software delivering business logic, invoice generation, inventory tracking, and direct SQL Server database interaction using ADO.NET for high-performance desktop operational environments.",
+    summary: "Windows desktop software built with C#, WPF, and ADO.NET for local inventory tracking, invoice generation, and high-performance SQL Server operations.",
+    description: "A desktop business management application built with WPF and C#. It uses ADO.NET for direct, low-latency communication with local SQL Server databases to handle billing, inventory tracking, and reporting.",
     technologies: [
       "C#",
       "WPF (Windows Presentation Foundation)",
@@ -331,8 +318,8 @@ export const PROJECTS: ProjectItem[] = [
       "XAML",
     ],
     highlights: [
-      "Engineered responsive desktop user interfaces using XAML and WPF architecture.",
-      "Built high-performance direct ADO.NET database command pipelines for low-latency desktop transactions.",
+      "Designed responsive desktop UI forms using XAML and WPF architecture.",
+      "Wrote direct ADO.NET data access pipelines for fast, low-latency desktop database queries.",
       "Implemented structured validation rules and localized reporting workflows.",
     ],
   },
@@ -341,32 +328,31 @@ export const PROJECTS: ProjectItem[] = [
 export const CASE_STUDIES: CaseStudyItem[] = [
   {
     id: "case-study-transaction-allocation-returns",
-    title: "ERP Transaction Allocation & Customer Product Returns",
-    problem: "Financial transaction allocation and customer product returns represent one of the most complex domains in enterprise ERP. Allocating receipts and credit notes across multiple debit invoices requires handling partial splits, remaining balance tracking, multi-currency conversions, and live ledger reconciliation. Furthermore, when a customer returns a product, the system must simultaneously reverse inventory stock into warehouse bins, generate debtor credit notes/refunds, recalculate taxes and COGS, and reallocate previous transaction balances all without race conditions, rounding mismatches, or negative balances.",
-    approach: "Architected a dual-tier synchronization strategy: an interactive, real-time allocation grid in Angular with live balance validation, coupled with atomic SQL Server stored procedures utilizing `OPENJSON` batch processing, row-level locking hints, and transactional balance recalculation on the database side.",
+    title: "Financial Transaction Allocation & Customer Product Returns",
+    problem: "In an enterprise ERP, managing money and inventory returns is complex. When a customer pays multiple invoices with a single payment, or returns items from an earlier order, the system must handle partial splits, track unallocated balances, return stock to the correct warehouse bins, issue credit notes, and reverse taxes. If two operators update the same customer simultaneously, simple database updates can easily lead to race conditions, negative stock counts, or unbalanced ledgers.",
+    approach: "I designed a two-tier solution: an interactive Angular AG Grid interface that validates quantities and shows live unallocated balances before submission, paired with atomic SQL Server stored procedures that process batch updates using OPENJSON and strict row locks.",
     technologies: ["ASP.NET Core", "C#", "SQL Server", "T-SQL Transactions", "OPENJSON", "Angular 17", "AG Grid", "Reactive Forms"],
-    implementation: "On the SP side, structured high-performance procedures (`AR_CreditDebitAllocationManagement`, `AR_DebitCreditAllocationManagement`, `AR_DebtorRefundManagement`) ingesting JSON arrays via `OPENJSON`. Atomically inserted records into `LBS_ACR_DebtorTransactionAllocations`, incremented `AllocatedAmountHome` across debit and credit transactions, appended transaction reference audit trails (`InvoiceNotes1`), reversed warehouse inventory stock, and updated debtor balances within strict `TRY...CATCH` transaction blocks. On the frontend side, developed responsive Angular interfaces with AG Grid and Reactive Forms enabling users to pick original sales order items, enforce return quantity caps, auto-allocate FIFO or manually distribute refund amounts, and provide instant visual feedback on unallocated balances before submission.",
-    result: "Eliminated transaction allocation discrepancies and duplicate entries under concurrent operator usage, automated complex customer product returns with instant inventory replenishment and ledger synchronization, and ensured 100% financial audit compliance.",
+    implementation: "In SQL Server, I wrote stored procedures (like AR_CreditDebitAllocationManagement and AR_DebtorRefundManagement) that ingest batch arrays via OPENJSON. Inside atomic TRY...CATCH transaction blocks, the procedures insert allocation records, update debtor balances, create audit notes, and replenish warehouse bin inventory. On the frontend, I built reactive forms in Angular with AG Grid where users can select invoice line items, enforce return quantity limits, and see instant visual feedback on remaining balances before sending.",
+    result: "Eliminated duplicate allocations and balance mismatches under concurrent use, automated the entire customer return and restock workflow, and ensured every financial transaction has a clean, traceable audit trail.",
   },
   {
     id: "case-study-dms-security",
-    title: "Document Management Tree & RBAC Security",
-    problem: "Enterprise documents needed hierarchical organization (parent/child/subfolder trees of infinite depth) and strict role/user-level visibility. Bloated third-party tree packages added unnecessary bundle size and lacked seamless integration with custom drag-and-drop and inline renaming. Furthermore, merely hiding unauthorized folders in the frontend UI would expose security vulnerabilities to direct API requests.",
-    approach: "Engineered a lightweight custom tree view using Angular's native recursive `ng-template` (`*ngTemplateOutlet`) paired with AG Grid for file management. Modeled hierarchical folder relationships and role-wise permissions in SQL Server  , strictly enforced a 3-tier authorization matrix (`SecurityAccessEnum`: Admin, Editor, Viewer) across both Angular UI action buttons and C# ASP.NET Core API endpoints.",
+    title: "Custom Recursive Folder Tree & RBAC Security",
+    problem: "Our ERP needed an intuitive file manager with unlimited folder nesting depth, drag-and-drop reorganization, and strict role-based access control. Third-party tree libraries added too much bundle weight and lacked seamless drag-and-drop customization. Moreover, simply hiding folders in the frontend UI wasn't secure unauthorized users could still query backend endpoints directly if APIs weren't properly validating folder permissions.",
+    approach: "I built a lightweight custom tree using Angular's native recursive ng-template (*ngTemplateOutlet) with zero external dependencies. On the backend, I designed recursive SQL queries and ASP.NET Core authorization filters enforcing a 3-tier security matrix (Admin, Editor, Viewer) across both UI buttons and API endpoints.",
     technologies: ["Angular 17", "ASP.NET Core", "C#", "SQL Server", "Recursive ng-template", "AG Grid", "Stored Procedures"],
-    implementation: "Constructed the tree view using recursive `<ng-template #recursiveFolderTemplate>` with HTML5 drag-and-drop for folder re-parenting, inline rename with debounce, and dynamic breadcrumbs. In the backend, designed recursive SQL queries and C# authorization interceptors that evaluate the user's role and identity against granted folder scopes before querying or returning any folder nodes or file binaries.",
-    result: "Achieved a fast, zero-external-tree-package UI supporting infinite folder depth, dynamic breadcrumbs, and AG Grid file management, while ensuring users can only see and manipulate folders/documents they are explicitly authorized for, verified end-to-end at the API and database tiers.",
+    implementation: "I constructed the tree using <ng-template #recursiveFolderTemplate> with HTML5 drag-and-drop for folder re-parenting, inline renaming, and dynamic breadcrumbs. On the backend, C# API controllers evaluate the caller's JWT claims and folder security tables before returning folder hierarchies or file binaries, ensuring restricted files are never exposed.",
+    result: "Kept the frontend bundle small and fast with full drag-and-drop and AG Grid file browsing, while ensuring bulletproof security verified at both the API and database levels.",
   },
   {
     id: "case-study-migration",
-    title: "Angular & .NET Stack Migration",
-    problem: "The enterprise ERP needed modern security, enhanced developer ergonomics, and performance improvements, requiring upgrades from Angular 7 to Angular 17 and .NET 6 to .NET 8.",
-    approach: "Executed a phased migration: resolved frontend dependency conflicts, updated deprecated component APIs, migrated AG Grid modules, and upgraded the backend runtime, NuGet packages, and hosting configurations.",
+    title: "Modernizing Enterprise ERP: Angular 7 → 17 & .NET 6 → 8",
+    problem: "Legacy ERP modules were running on older framework versions (Angular 7 and .NET 6), making it harder to use modern library features, take advantage of performance improvements, or maintain long-term security standards.",
+    approach: "I planned and executed a phased migration: resolved dependency conflicts, migrated deprecated Angular Material components, updated AG Grid packages, and upgraded the backend runtime to .NET 8.",
     technologies: [".NET 6 → .NET 8", "Angular 7 → Angular 17", "AG Grid", "TypeScript", "IIS"],
-    implementation: "Refactored Angular module declarations to standalone patterns where appropriate, updated RxJS pipe operators, adjusted Angular Material theming tokens, upgraded ASP.NET Core startup configurations to .NET 8 minimal/program conventions, and re-verified IIS hosting compatibility.",
-    result: "Modernized the full application codebase, unlocked latest framework optimizations, enhanced build performance, and ensured long-term maintainability.",
+    implementation: "Refactored Angular module declarations, updated RxJS pipeable operators, refreshed Material styling tokens, and adapted ASP.NET Core startup to .NET 8 Program conventions while verifying IIS reverse-proxy and CORS configurations in staging.",
+    result: "Significantly improved frontend build speeds and runtime responsiveness, streamlined the codebase with modern TypeScript and C# features, and set up a solid foundation for future development.",
   },
-
 ];
 
 export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
@@ -384,7 +370,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       "Role-aware UI guards and dynamic button permission gating (SecurityAccessEnum)",
     ],
     technologies: ["Angular 17", "TypeScript", "AG Grid", "RxJS", "Angular Material"],
-    hardikRoleNote: "Builds responsive, accessible frontend views, complex data grids, custom recursive tree views, and connects components to backend REST endpoints.",
+    hardikRoleNote: "I build responsive views, custom recursive folder trees, and interactive AG Grid tables with real-time balance calculations.",
   },
   {
     id: "aspnet-web-api",
@@ -399,7 +385,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       "CORS policies, Swagger / OpenAPI documentation",
     ],
     technologies: ["ASP.NET Core", ".NET 8", "C#", "JWT", "Swagger / OpenAPI"],
-    hardikRoleNote: "Designs clean REST endpoints, configures JWT auth, implements request validation, and establishes global error-handling middleware.",
+    hardikRoleNote: "I design clean REST endpoints, set up JWT authentication, write input validation, and implement global error-handling middleware.",
   },
   {
     id: "business-logic-layer",
@@ -416,7 +402,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       "Inventory transfer validation and serialized item tracking",
     ],
     technologies: ["C#", "Dependency Injection (DI)", "Service Pattern", "Domain Logic"],
-    hardikRoleNote: "Engineers core business rules, service interfaces, dependency injection configurations, and multi-tenant approval logic.",
+    hardikRoleNote: "I write the core business rules, service interfaces, dependency injection setup, and workflow approval logic in C#.",
   },
   {
     id: "repository-data-access",
@@ -431,7 +417,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       "Execution timing and telemetry logging",
     ],
     technologies: ["C# Interfaces", "Data Access Pattern", "Connection Factory"],
-    hardikRoleNote: "Implements repository patterns to maintain clean, testable separation between business logic and database queries.",
+    hardikRoleNote: "I implement repository patterns to keep business logic decoupled from raw database queries.",
   },
   {
     id: "dapper-entity-framework",
@@ -446,7 +432,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       "Optimized parameter binding for batch operations",
     ],
     technologies: ["Dapper", "Entity Framework Core", "ADO.NET", "LINQ"],
-    hardikRoleNote: "Utilizes Dapper for executing high-performance stored procedures and EF Core for structured entity tracking.",
+    hardikRoleNote: "I use Dapper for executing high-throughput stored procedures and EF Core for structured entity tracking.",
   },
   {
     id: "sql-server-stored-procs",
@@ -464,7 +450,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       "Non-clustered indexing and execution plan tuning",
     ],
     technologies: ["SQL Server", "T-SQL", "Stored Procedures", "Indexes", "Transactions", "OPENJSON"],
-    hardikRoleNote: "Writes, refactors, and debugs complex stored procedures, designs normalized schemas, tunes indexes, and ensures transaction integrity.",
+    hardikRoleNote: "I write and optimize stored procedures, design normalized schemas, tune indexes, and enforce atomic transaction integrity.",
   },
 ];
 
@@ -480,7 +466,7 @@ export const EDUCATION_ITEMS: EducationItem[] = [
 export const CERTIFICATION_ITEMS: CertificationItem[] = [
   {
     id: "hackaura-hackathon-2025",
-    title: "Certificate of Completion — HackAura Hackathon",
+    title: "Certificate of Completion HackAura Hackathon",
     issuer: "Girls Leading Tech",
     event: "HackAura Hackathon",
     date: "October 2025",
@@ -490,7 +476,7 @@ export const CERTIFICATION_ITEMS: CertificationItem[] = [
     imageUrl: "/certificates/hackaura-certificate.jpg",
     projectName: "CriminalDetector.py",
     projectUrl: "https://github.com/hardikjari/CriminalDetector.py",
-    description: "Successfully participated in the HackAura Hackathon and engineered 'CriminalDetector.py' an integrated AI surveillance platform combining an Angular frontend, an ASP.NET Core Web API backend, and a Python computer vision facial recognition model for real-time person-of-interest detection across live camera feeds.",
+    description: "Participated in the HackAura Hackathon and built 'CriminalDetector.py' a computer vision security platform combining a Python facial recognition model with an ASP.NET Core API backend and an Angular frontend for real-time camera feed analysis.",
     technologies: ["Python", "Computer Vision / AI", "ASP.NET Core API", "Angular", "Real-Time Surveillance"],
   },
 ];
@@ -501,21 +487,21 @@ export const CERTIFICATIONS = {
 };
 
 export const CAREER_GOALS = {
-  title: "Focused Engineering Growth",
-  primaryIdentity: "Full-Stack .NET / Angular Software Engineer",
-  statement: "Primary identity stays firmly grounded as a Full-Stack .NET / Angular Software Engineer. Actively growing toward advanced backend/cloud engineering, scalable system design, and AI/ML framed as natural extensions of enterprise backend work, not a pivot.",
+  title: "What I'm Focusing on Next",
+  primaryIdentity: "Full-Stack .NET & Angular Software Engineer",
+  statement: "My primary focus is building solid, dependable full-stack applications with .NET, Angular, and SQL Server. Alongside my day-to-day work, I'm continuously expanding my skillset into cloud systems, distributed architectures, and practical AI integrations.",
   focusAreas: [
     {
-      title: "Backend & Cloud Architecture",
-      description: "Deepening expertise in distributed cloud architectures, containerization (Docker), caching layers (Redis), and microservices.",
+      title: "Backend & Cloud Systems",
+      description: "Exploring containerization with Docker, Redis caching, microservices, and deploying resilient backend APIs.",
     },
     {
-      title: "Scalable System Design",
-      description: "Designing high-availability, fault-tolerant enterprise pipelines with clean architectural boundaries and event-driven patterns.",
+      title: "System Design & Scalability",
+      description: "Studying high-availability system design, message queues, and clean domain-driven architecture.",
     },
     {
-      title: "AI/ML Integration in Enterprise Systems",
-      description: "Exploring intelligent data analysis, workflow automation, and LLM-assisted features for business management software.",
+      title: "AI & Automation",
+      description: "Building practical tools with Python, FastAPI, computer vision (like my HackAura hackathon project), and exploring LLM integrations for enterprise tools.",
     },
   ],
 };

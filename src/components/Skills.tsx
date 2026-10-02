@@ -108,16 +108,16 @@ export function Skills() {
     >
       <div className="max-w-6xl mx-auto">
         <SectionHeading
-          badge="Technical Competencies"
-          title="Skills & Technical Expertise"
-          subtitle="Categorized with honest proficiency tiers reflecting actual hands-on enterprise experience across .NET, Angular, SQL Server, and IIS deployment."
+          badge="Skills & Tools"
+          title="Technologies I Work With"
+          subtitle="A clear breakdown of the technologies I use every day in production versus tools I've explored and built side projects with."
         />
 
         {/* Honesty Legend */}
         <div className="mb-8 p-4 rounded-xl glass-card border border-[var(--border-subtle)] flex flex-wrap items-center justify-between gap-3 text-xs">
           <div className="flex items-center gap-2 text-[var(--text-main)] font-medium">
             <Info className="w-4 h-4 text-[var(--accent-cyan)]" />
-            <span>Honesty & Experience Tiers:</span>
+            <span>Skill Proficiency & Hands-on Depth:</span>
           </div>
           <div className="flex flex-wrap items-center gap-2.5">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[var(--badge-strong-bg)] border border-[var(--badge-strong-border)] text-[var(--badge-strong-text)] font-mono">

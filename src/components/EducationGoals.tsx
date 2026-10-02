@@ -70,9 +70,9 @@ export function EducationGoals() {
     >
       <div className="max-w-6xl mx-auto">
         <SectionHeading
-          badge="Growth & Foundation"
-          title="Education & Career Trajectory"
-        // subtitle="Academic credentials and focused engineering expansion into cloud systems, distributed design, and enterprise AI."
+          badge="Education & Growth"
+          title="Education & Continuous Learning"
+          subtitle="My academic foundation in computer applications and the engineering skills I'm actively expanding."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -227,7 +227,7 @@ export function EducationGoals() {
                     <Compass className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-xs font-mono text-[var(--text-subtle)] uppercase">Vision & Expansion</div>
+                    <div className="text-xs font-mono text-[var(--text-subtle)] uppercase">Continuous Learning</div>
                     <h3 className="text-xl font-bold text-[var(--text-main)]">
                       {CAREER_GOALS.title}
                     </h3>
@@ -236,7 +236,7 @@ export function EducationGoals() {
 
                 <div className="p-4 rounded-xl bg-[var(--badge-strong-bg)] border border-[var(--badge-strong-border)] space-y-1">
                   <div className="text-xs font-mono font-semibold text-[var(--accent-cyan)] uppercase tracking-wider">
-                    Firm Engineering Anchor
+                    Primary Focus
                   </div>
                   <div className="text-sm font-bold text-[var(--text-main)]">
                     {CAREER_GOALS.primaryIdentity}
@@ -249,7 +249,7 @@ export function EducationGoals() {
 
                 <div className="space-y-3 pt-2">
                   <div className="text-xs font-mono uppercase tracking-widest text-[var(--text-subtle)]">
-                    Target Growth Dimensions
+                    Areas of Exploration
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -274,7 +274,7 @@ export function EducationGoals() {
               </div>
 
               <div className="pt-4 border-t border-[var(--border-subtle)] text-xs text-[var(--text-subtle)] font-mono">
-                Continuous learning through production practice, system architecture studies, and modern cloud patterns.
+                Continuously learning through hands-on side projects, system architecture studies, and production experience.
               </div>
             </div>
           </div>

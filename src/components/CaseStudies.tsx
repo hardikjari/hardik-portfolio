@@ -134,9 +134,9 @@ export function CaseStudies() {
     >
       <div className="max-w-5xl mx-auto">
         <SectionHeading
-          badge="Technical Problem Solving"
-          title="Engineering Case Studies"
-          subtitle="Deep-dive breakdown of concrete architectural challenges solved in enterprise production environments Problem → Approach → Implementation → Result."
+          badge="Case Studies"
+          title="Real Production Challenges"
+          subtitle="A look into complex architectural challenges I tackled in production — the problem, the technical trade-offs, and how I solved them."
         />
 
         <div className="space-y-4">
@@ -213,7 +213,7 @@ export function CaseStudies() {
                       <div className="p-4 rounded-xl bg-cyan-500/5 border border-cyan-500/15 space-y-1.5">
                         <div className="text-xs font-mono font-bold uppercase tracking-wider text-[var(--accent-cyan)] flex items-center gap-1.5">
                           <span className="w-2 h-2 rounded-full bg-[var(--accent-cyan)]" />
-                          The Engineering Approach
+                          How I Approached It
                         </div>
                         <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed">
                           {study.approach}
@@ -224,7 +224,7 @@ export function CaseStudies() {
                     {/* Implementation Detail */}
                     <div className="p-4 rounded-xl bg-[var(--bg-surface)] border border-[var(--border-subtle)] space-y-1.5">
                       <div className="text-xs font-mono font-bold uppercase tracking-wider text-[var(--text-subtle)]">
-                        Implementation Specifics
+                        Implementation Details
                       </div>
                       <p className="text-xs sm:text-sm text-[var(--text-main)] leading-relaxed">
                         {study.implementation}
@@ -236,7 +236,7 @@ export function CaseStudies() {
                       <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                       <div>
                         <div className="text-xs font-mono font-bold uppercase tracking-wider text-emerald-400 mb-1">
-                          Verified Outcome
+                          The Outcome
                         </div>
                         <p className="text-xs sm:text-sm text-[var(--text-main)] leading-relaxed font-medium">
                           {study.result}

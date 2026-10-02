@@ -126,9 +126,9 @@ export function Contact() {
     >
       <div className="max-w-6xl mx-auto">
         <SectionHeading
-          badge="Get in Touch"
-          title="Let's Discuss Engineering Opportunities"
-          subtitle="Interested in discussing full-stack .NET and Angular engineering roles, enterprise systems, or technical collaborations? Feel free to reach out directly."
+          badge="Contact"
+          title="Let's Connect"
+          subtitle="I'm always open to discussing new opportunities, full-stack .NET & Angular roles, or interesting technical projects."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -137,10 +137,10 @@ export function Contact() {
             <div className="anime-contact-item p-6 rounded-2xl glass-card border border-[var(--border-subtle)] space-y-4">
               <h3 className="text-base font-bold text-[var(--text-main)] flex items-center gap-2">
                 <MessageSquare className="w-4 h-4 text-[var(--accent-cyan)]" />
-                Direct Communication Channels
+                Reach Out Directly
               </h3>
               <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-                Connect via email, phone, LinkedIn, or Dev Community. Feel free to reach out directly or submit the inquiry form below.
+                Feel free to connect via email, phone, LinkedIn, or Dev Community. You can also send a direct message using the form.
               </p>
 
               {/* Email */}
@@ -262,10 +262,10 @@ export function Contact() {
             <div className="anime-contact-item p-6 sm:p-8 rounded-2xl glass-card border border-[var(--border-subtle)] space-y-6">
               <div>
                 <h3 className="text-xl font-bold text-[var(--text-main)] mb-1">
-                  Send a Direct Message
+                  Send Me a Message
                 </h3>
                 <p className="text-xs text-[var(--text-muted)]">
-                  Fill out the fields below to send a message directly to Hardik&apos;s inbox.
+                  Drop a note below and I&apos;ll get back to you as soon as possible.
                 </p>
               </div>
 
@@ -276,8 +276,8 @@ export function Contact() {
                     Message Sent Successfully!
                   </h4>
                   <p className="text-xs sm:text-sm text-[var(--text-muted)] max-w-md mx-auto leading-relaxed">
-                    Thank you, <strong className="text-[var(--text-main)]">{formData.name || "there"}</strong>. Your inquiry has been dispatched directly to{" "}
-                    <span className="text-[var(--accent-cyan)] font-mono font-semibold">{CONTACT_INFO.email}</span>. Hardik will review and get back to you shortly.
+                    Thank you, <strong className="text-[var(--text-main)]">{formData.name || "there"}</strong>. Your message has been sent directly to{" "}
+                    <span className="text-[var(--accent-cyan)] font-mono font-semibold">{CONTACT_INFO.email}</span>. I&apos;ll review it and get back to you shortly.
                   </p>
                   {isActivationNotice && (
                     <div className="p-3 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-mono text-left max-w-md mx-auto">
