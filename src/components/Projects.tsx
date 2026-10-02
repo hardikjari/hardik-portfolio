@@ -46,9 +46,16 @@ export function Projects() {
                 targets: el.querySelectorAll(".anime-project-card"),
                 opacity: [0, 1],
                 translateY: [24, 0],
-                delay: anime.stagger(100, { start: 100 }),
+                delay: anime.stagger(80, { start: 100 }),
                 duration: 650,
                 easing: "easeOutQuad",
+                complete: (anim) => {
+                  anim.animatables.forEach((a) => {
+                    const htmlEl = a.target as HTMLElement;
+                    htmlEl.style.opacity = "1";
+                    htmlEl.style.transform = "";
+                  });
+                }
               });
             }
             observer.unobserve(entry.target);
@@ -61,38 +68,6 @@ export function Projects() {
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
-
-  const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReducedMotion) return;
-
-    const target = e.currentTarget;
-    anime.remove(target);
-    anime({
-      targets: target,
-      translateY: -6,
-      scale: 1.01,
-      boxShadow: "0 20px 30px -10px rgba(0, 0, 0, 0.4), 0 0 25px 0 rgba(6, 182, 212, 0.12)",
-      duration: 250,
-      easing: "easeOutQuad",
-    });
-  };
-
-  const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReducedMotion) return;
-
-    const target = e.currentTarget;
-    anime.remove(target);
-    anime({
-      targets: target,
-      translateY: 0,
-      scale: 1.0,
-      boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
-      duration: 300,
-      easing: "easeOutQuad",
-    });
-  };
 
   const getProjectIcon = (category: ProjectItem["category"]) => {
     switch (category) {
@@ -137,10 +112,8 @@ export function Projects() {
             return (
               <div
                 key={project.id}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
                 onClick={() => setSelectedProject(project)}
-                className={`anime-project-card ${colSpan} p-6 sm:p-7 rounded-2xl glass-card border border-[var(--border-subtle)] hover:border-[var(--accent-cyan)]/40 transition-colors duration-200 flex flex-col justify-between cursor-pointer group relative`}
+                className={`anime-project-card ${colSpan} p-6 sm:p-7 rounded-2xl glass-card border border-[var(--border-subtle)] hover:border-[var(--accent-cyan)]/50 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 flex flex-col justify-between cursor-pointer group relative`}
               >
                 {/* Flagship ribbon */}
                 {project.isFlagship && (

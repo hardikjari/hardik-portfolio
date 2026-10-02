@@ -4,13 +4,13 @@ import React, { useState, useEffect, useRef } from "react";
 import anime from "animejs";
 import { SectionHeading } from "./ui/SectionHeading";
 import { CONTACT_INFO, PORTFOLIO_INFO } from "@/data/portfolioData";
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Send, 
-  CheckCircle2, 
-  Copy, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  CheckCircle2,
+  Copy,
   ArrowUpRight,
   Sparkles,
   MessageSquare,
@@ -90,7 +90,7 @@ export function Contact() {
           "Email Address": formData.email,
           "Subject / Role": formData.subject || "Portfolio Inquiry / Engineering Opportunity",
           "Message": formData.message,
-          _subject: `[Portfolio Inquiry] ${formData.subject ? formData.subject : 'New Direct Message'} — from ${formData.name}`,
+          _subject: `[Portfolio Inquiry] ${formData.subject ? formData.subject : 'New Direct Message'} from ${formData.name}`,
           _replyto: formData.email,
           _template: "box",
           _captcha: "false",

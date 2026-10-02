@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Hardik Jariwala | Full-Stack .NET & Angular Software Engineer",
   description:
-    "Full-stack .NET & Angular engineer with hands-on experience building enterprise ERP systems — ASP.NET Core APIs, SQL Server business logic, and complex workflow features.",
+    "Full-stack .NET & Angular engineer with hands-on experience building enterprise ERP systems ASP.NET Core APIs, SQL Server business logic, and complex workflow features.",
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     url: "https://hardikjariwala.dev",
     title: "Hardik Jariwala | Full-Stack .NET & Angular Software Engineer",
     description:
-      "Full-stack engineer with hands-on experience building enterprise ERP systems — ASP.NET Core APIs, Angular front ends, SQL Server-backed business logic, and complex approval/workflow-driven modules.",
+      "Full-stack engineer with hands-on experience building enterprise ERP systems ASP.NET Core APIs, Angular front ends, SQL Server-backed business logic, and complex approval/workflow-driven modules.",
     siteName: "Hardik Jariwala Portfolio",
   },
   twitter: {

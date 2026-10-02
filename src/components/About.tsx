@@ -197,7 +197,7 @@ export function About() {
                 <span>Production Reliability Focus</span>
               </div>
               <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-                Beyond writing new features, Hardik routinely diagnoses and resolves production anomalies — from stored procedure deadlocks and NULL-conversion issues to IIS reverse-proxy CORS bindings and Angular runtime exceptions.
+                Beyond writing new features, Hardik routinely diagnoses and resolves production anomalies from stored procedure deadlocks and NULL-conversion issues to IIS reverse-proxy CORS bindings and Angular runtime exceptions.
               </p>
             </div> */}
           </div>

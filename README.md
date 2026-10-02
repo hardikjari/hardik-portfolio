@@ -1,4 +1,4 @@
-# 🚀 Hardik Jariwala — Full-Stack Portfolio
+# 🚀 Hardik Jariwala Full-Stack Portfolio
 
 <div align="center">
 
@@ -59,7 +59,7 @@ This repository contains the source code for the personal engineering portfolio 
 - **Career Path:** Progressed from **.NET Intern** (Jan 2024) to full **SDE-1**, earning end-to-end ownership of mission-critical features from UI through API to SQL Server business logic.
 - **Experience:** 2+ Years Professional Experience in full-stack enterprise development.
 - **Education:** **Master of Computer Applications (MCA)**, Graduated 2024 from Sarvajanik University, Surat, Gujarat, India.
-- **Core Philosophy:** *Backend integrity first.* Clean architecture, atomic database transactions, zero balance discrepancies, and defensive null handling—paired with reactive, component-driven Angular user interfaces.
+- **Core Philosophy:** *Backend integrity first.* Clean architecture, atomic database transactions, zero balance discrepancies, and defensive null handling paired with reactive, component-driven Angular user interfaces.
 
 ---
 

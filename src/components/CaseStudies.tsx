@@ -136,7 +136,7 @@ export function CaseStudies() {
         <SectionHeading
           badge="Case Studies"
           title="Real Production Challenges"
-          subtitle="A look into complex architectural challenges I tackled in production — the problem, the technical trade-offs, and how I solved them."
+          subtitle="A look into complex architectural challenges I tackled in production the problem, the technical trade-offs, and how I solved them."
         />
 
         <div className="space-y-4">

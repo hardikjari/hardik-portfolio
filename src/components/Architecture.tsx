@@ -84,7 +84,7 @@ export function Architecture() {
         <SectionHeading
           badge="System Architecture"
           title="How Data Flows Through My Applications"
-          subtitle="A visual walkthrough of how requests travel across the stack — from the Angular frontend UI down to SQL Server stored procedures."
+          subtitle="A visual walkthrough of how requests travel across the stack from the Angular frontend UI down to SQL Server stored procedures."
         />
 
         {/* Interactive Architecture Flow Grid */}
@@ -99,8 +99,8 @@ export function Architecture() {
                   <div
                     onClick={() => setActiveLayer(layer)}
                     className={`anime-arch-node p-4 sm:p-4.5 rounded-xl border transition-all duration-200 cursor-pointer flex items-center justify-between gap-4 ${isSelected
-                        ? "bg-[var(--bg-surface-elevated)] border-[var(--accent-cyan)] shadow-lg shadow-cyan-500/10 scale-[1.01]"
-                        : "glass-card border-[var(--border-subtle)] hover:border-[var(--border-strong)] hover:bg-[var(--bg-surface-elevated)]/60"
+                      ? "bg-[var(--bg-surface-elevated)] border-[var(--accent-cyan)] shadow-lg shadow-cyan-500/10 scale-[1.01]"
+                      : "glass-card border-[var(--border-subtle)] hover:border-[var(--border-strong)] hover:bg-[var(--bg-surface-elevated)]/60"
                       }`}
                   >
                     <div className="flex items-center gap-3.5">
