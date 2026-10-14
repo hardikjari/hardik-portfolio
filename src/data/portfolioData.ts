@@ -492,8 +492,14 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
 export const EDUCATION_ITEMS: EducationItem[] = [
   {
     degree: "Master of Computer Applications (MCA)",
-    year: "Completed 2024",
-    details: "Sarvajanik University, Surat, Gujarat",
+    year: "2024",
+    details: "Sarvajanik College of Engineering and Technology (SCET)",
+    status: "Completed",
+  },
+  {
+    degree: "Bachelor of Computer Applications (BCA)",
+    year: "2022",
+    details: "C.B. Patel Computer College - VNSGU",
     status: "Completed",
   },
 ];
